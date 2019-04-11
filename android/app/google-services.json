@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "228933065115",
+    "firebase_url": "https://static-concept-227918.firebaseio.com",
+    "project_id": "static-concept-227918",
+    "storage_bucket": "static-concept-227918.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:228933065115:android:123fbdae20c169a6",
+        "android_client_info": {
+          "package_name": "prefaceroapp.co.com.prefacero.prefaceroapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "228933065115-f14ttf7sten1eavmrv7fb0pi7630qn0f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "prefaceroapp.co.com.prefacero.prefaceroapp",
+            "certificate_hash": "eefcc7b2a6183612247f6ec641eed08ca8aeb81c"
+          }
+        },
+        {
+          "client_id": "228933065115-2vo9u1j1jdd5fslu1o8enr0q6lqmrrs5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB58cxzrY4JObySa3AXERkkK3P4KWku1vQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "228933065115-2vo9u1j1jdd5fslu1o8enr0q6lqmrrs5.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "228933065115-qn7kl9qarek5lp134i5fjrpnudfd1qe1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "prefaceroapp.co.com.prefacero.prefaceroApp"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
