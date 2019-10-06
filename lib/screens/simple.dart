@@ -27,6 +27,7 @@ class _AuxContState extends State<AuxCont>{
   Auxiliar auxEntry;
   JournalTrans entry;
   JournalTrans results;
+  //Se crea la instancia
   final FirebaseDatabase database = FirebaseDatabase.instance;
   final GlobalKey<FormState> formKey = GlobalKey();
   DatabaseReference journalRef;
@@ -338,6 +339,7 @@ class _AuxContState extends State<AuxCont>{
       form.reset();
 
       debugPrint("numDoc de journal es ${journal.numDoc}");
+      //Genera un nuevo registro y trae la clave con la que se guarda
       String newKey = journalRef.push().key;
       journalRef.child(newKey).set(journal.toJson());
       debugPrint("last key es: $newKey");

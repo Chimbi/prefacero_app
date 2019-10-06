@@ -38,6 +38,7 @@ class DatabaseHelper {
     Directory documentDirectory = await getApplicationDocumentsDirectory();
     String path = join(documentDirectory.path, "maindb.db"); // home;
     var ourDb = await openDatabase(path, version: 2, onCreate: _onCreate);
+    return ourDb;
   }
 
   /*

@@ -19,6 +19,15 @@ class Producto {
       costo = snapshot.value["costo"];
   }
 
+  Map<String, dynamic> toMap() => {
+   "nombre": nombre, "precio": precio, "disp": disp, "tiempoFab": tiempoFab, "costo": costo
+  };
+
+  factory Producto.fromMap(Map<String, dynamic> map) => Producto(
+      nombre: map["nombre"], precio: map["precio"], disp: map["disp"], tiempoFab: map["tiempoFab"],
+      costo: map["costo"]
+      );
+
 
   toJson() {
     return {

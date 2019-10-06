@@ -71,7 +71,7 @@ class _OrderManagementState extends State<OrderManagement> {
                     ],
                   ),
                 ),
-                Row(
+                entry.disp == 0 ? RaisedButton(child: Text("Agregar"), onPressed: () => _addOne(entry)) : Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
                     IconButton(
