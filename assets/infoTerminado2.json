@@ -1,0 +1,1730 @@
+{
+   "H-08": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 23,
+         "codigo": 8,
+         "costo": 1921.37,
+         "transNature": "D",
+         "nombre": "H-08"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 0.546,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 1921.37,
+         "transNature": "C",
+         "nombre": "H-08"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "H-16": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 23,
+         "codigo": 16,
+         "costo": 3862.548,
+         "transNature": "D",
+         "nombre": "H-16"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 1.097,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 3862.548,
+         "transNature": "C",
+         "nombre": "H-16"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "H-18": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 23,
+         "codigo": 18,
+         "costo": 4337.939,
+         "transNature": "D",
+         "nombre": "H-18"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 1.232,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 4337.939,
+         "transNature": "C",
+         "nombre": "H-18"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "H-20": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 23,
+         "codigo": 20,
+         "costo": 4833.137,
+         "transNature": "D",
+         "nombre": "H-20"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 1.373,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 4833.137,
+         "transNature": "C",
+         "nombre": "H-20"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "H-22": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 23,
+         "codigo": 22,
+         "costo": 5308.528,
+         "transNature": "D",
+         "nombre": "H-22"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 1.508,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 5308.528,
+         "transNature": "C",
+         "nombre": "H-22"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "H-24": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 23,
+         "codigo": 24,
+         "costo": 8675.878,
+         "transNature": "D",
+         "nombre": "H-24"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 2.464,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 8675.878,
+         "transNature": "C",
+         "nombre": "H-24"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "H-26": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 23,
+         "codigo": 26,
+         "costo": 9418.676,
+         "transNature": "D",
+         "nombre": "H-26"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 2.675,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 9418.676,
+         "transNature": "C",
+         "nombre": "H-26"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "H-28": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 23,
+         "codigo": 28,
+         "costo": 10131.761,
+         "transNature": "D",
+         "nombre": "H-28"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 2.878,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 10131.761,
+         "transNature": "C",
+         "nombre": "H-28"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "H-30": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 23,
+         "codigo": 30,
+         "costo": 10874.559,
+         "transNature": "D",
+         "nombre": "H-30"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 3.089,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 10874.559,
+         "transNature": "C",
+         "nombre": "H-30"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "H-32": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 23,
+         "codigo": 32,
+         "costo": 11587.645,
+         "transNature": "D",
+         "nombre": "H-32"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 3.291,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 11587.645,
+         "transNature": "C",
+         "nombre": "H-32"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "H-34": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 23,
+         "codigo": 34,
+         "costo": 12300.731,
+         "transNature": "D",
+         "nombre": "H-34"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 3.494,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 12300.731,
+         "transNature": "C",
+         "nombre": "H-34"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "H-36": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 23,
+         "codigo": 36,
+         "costo": 13043.529,
+         "transNature": "D",
+         "nombre": "H-36"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 3.705,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 13043.529,
+         "transNature": "C",
+         "nombre": "H-36"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "H-38": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 23,
+         "codigo": 38,
+         "costo": 14113.157,
+         "transNature": "D",
+         "nombre": "H-38"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 4.008,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 14113.157,
+         "transNature": "C",
+         "nombre": "H-38"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "H-40": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 23,
+         "codigo": 40,
+         "costo": 14499.412,
+         "transNature": "D",
+         "nombre": "H-40"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 4.118,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 14499.412,
+         "transNature": "C",
+         "nombre": "H-40"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "H-42": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 23,
+         "codigo": 42,
+         "costo": 15212.498,
+         "transNature": "D",
+         "nombre": "H-42"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 4.321,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 15212.498,
+         "transNature": "C",
+         "nombre": "H-42"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "H-44": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 23,
+         "codigo": 44,
+         "costo": 15925.584,
+         "transNature": "D",
+         "nombre": "H-44"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 4.523,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 15925.584,
+         "transNature": "C",
+         "nombre": "H-44"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "H-46": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 23,
+         "codigo": 46,
+         "costo": 16668.382,
+         "transNature": "D",
+         "nombre": "H-46"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 4.734,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 16668.382,
+         "transNature": "C",
+         "nombre": "H-46"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "H-48": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 23,
+         "codigo": 48,
+         "costo": 17381.468,
+         "transNature": "D",
+         "nombre": "H-48"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 4.937,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 17381.468,
+         "transNature": "C",
+         "nombre": "H-48"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "L-08": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 25,
+         "codigo": 8,
+         "costo": 2536.209,
+         "transNature": "D",
+         "nombre": "L-08"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 0.72,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 2536.209,
+         "transNature": "C",
+         "nombre": "L-08"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "L-16": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 25,
+         "codigo": 16,
+         "costo": 5098.564,
+         "transNature": "D",
+         "nombre": "L-16"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 1.448,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 5098.564,
+         "transNature": "C",
+         "nombre": "L-16"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "L-18": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 25,
+         "codigo": 18,
+         "costo": 5726.079,
+         "transNature": "D",
+         "nombre": "L-18"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 1.626,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 5726.079,
+         "transNature": "C",
+         "nombre": "L-18"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "L-20": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 25,
+         "codigo": 20,
+         "costo": 6379.741,
+         "transNature": "D",
+         "nombre": "L-20"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 1.812,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 6379.741,
+         "transNature": "C",
+         "nombre": "L-20"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "L-22": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 25,
+         "codigo": 22,
+         "costo": 7007.257,
+         "transNature": "D",
+         "nombre": "L-22"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 1.99,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 7007.257,
+         "transNature": "C",
+         "nombre": "L-22"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "L-24": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 25,
+         "codigo": 24,
+         "costo": 7634.773,
+         "transNature": "D",
+         "nombre": "L-24"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 2.168,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 7634.773,
+         "transNature": "C",
+         "nombre": "L-24"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "L-26": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 25,
+         "codigo": 26,
+         "costo": 8288.435,
+         "transNature": "D",
+         "nombre": "L-26"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 2.354,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 8288.435,
+         "transNature": "C",
+         "nombre": "L-26"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "L-28": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 25,
+         "codigo": 28,
+         "costo": 8915.95,
+         "transNature": "D",
+         "nombre": "L-28"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 2.532,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 8915.95,
+         "transNature": "C",
+         "nombre": "L-28"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "L-30": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 25,
+         "codigo": 30,
+         "costo": 9569.612,
+         "transNature": "D",
+         "nombre": "L-30"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 2.718,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 9569.612,
+         "transNature": "C",
+         "nombre": "L-30"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "L-32": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 25,
+         "codigo": 32,
+         "costo": 10197.128,
+         "transNature": "D",
+         "nombre": "L-32"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 2.896,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 10197.128,
+         "transNature": "C",
+         "nombre": "L-32"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "L-34": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 25,
+         "codigo": 34,
+         "costo": 10824.643,
+         "transNature": "D",
+         "nombre": "L-34"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 3.074,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 10824.643,
+         "transNature": "C",
+         "nombre": "L-34"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "L-36": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 25,
+         "codigo": 36,
+         "costo": 11478.305,
+         "transNature": "D",
+         "nombre": "L-36"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 3.26,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 11478.305,
+         "transNature": "C",
+         "nombre": "L-36"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "L-38": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 25,
+         "codigo": 38,
+         "costo": 12419.579,
+         "transNature": "D",
+         "nombre": "L-38"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 3.527,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 12419.579,
+         "transNature": "C",
+         "nombre": "L-38"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "L-40": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 25,
+         "codigo": 40,
+         "costo": 12759.483,
+         "transNature": "D",
+         "nombre": "L-40"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 3.624,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 12759.483,
+         "transNature": "C",
+         "nombre": "L-40"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "L-42": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 25,
+         "codigo": 42,
+         "costo": 13386.998,
+         "transNature": "D",
+         "nombre": "L-42"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 3.802,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 13386.998,
+         "transNature": "C",
+         "nombre": "L-42"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "L-44": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 25,
+         "codigo": 44,
+         "costo": 14014.514,
+         "transNature": "D",
+         "nombre": "L-44"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 3.98,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 14014.514,
+         "transNature": "C",
+         "nombre": "L-44"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "L-46": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 25,
+         "codigo": 46,
+         "costo": 14668.176,
+         "transNature": "D",
+         "nombre": "L-46"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 4.166,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 14668.176,
+         "transNature": "C",
+         "nombre": "L-46"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "L-48": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 25,
+         "codigo": 48,
+         "costo": 15295.692,
+         "transNature": "D",
+         "nombre": "L-48"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 4.344,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 15295.692,
+         "transNature": "C",
+         "nombre": "L-48"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "T-08": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 35,
+         "codigo": 8,
+         "costo": 2882.055,
+         "transNature": "D",
+         "nombre": "T-08"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 0.819,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 2882.055,
+         "transNature": "C",
+         "nombre": "T-08"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "T-16": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 35,
+         "codigo": 16,
+         "costo": 5793.823,
+         "transNature": "D",
+         "nombre": "T-16"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 1.646,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 5793.823,
+         "transNature": "C",
+         "nombre": "T-16"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "T-18": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 35,
+         "codigo": 18,
+         "costo": 6506.908,
+         "transNature": "D",
+         "nombre": "T-18"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 1.848,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 6506.908,
+         "transNature": "C",
+         "nombre": "T-18"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "T-20": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 35,
+         "codigo": 20,
+         "costo": 7249.706,
+         "transNature": "D",
+         "nombre": "T-20"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 2.059,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 7249.706,
+         "transNature": "C",
+         "nombre": "T-20"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "T-22": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 35,
+         "codigo": 22,
+         "costo": 7962.792,
+         "transNature": "D",
+         "nombre": "T-22"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 2.262,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 7962.792,
+         "transNature": "C",
+         "nombre": "T-22"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "T-24": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 35,
+         "codigo": 24,
+         "costo": 11567.837,
+         "transNature": "D",
+         "nombre": "T-24"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 3.285,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 11567.837,
+         "transNature": "C",
+         "nombre": "T-24"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "T-26": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 35,
+         "codigo": 26,
+         "costo": 12558.234,
+         "transNature": "D",
+         "nombre": "T-26"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 3.567,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 12558.234,
+         "transNature": "C",
+         "nombre": "T-26"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "T-28": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 35,
+         "codigo": 28,
+         "costo": 13509.015,
+         "transNature": "D",
+         "nombre": "T-28"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 3.837,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 13509.015,
+         "transNature": "C",
+         "nombre": "T-28"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "T-30": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 35,
+         "codigo": 30,
+         "costo": 14499.412,
+         "transNature": "D",
+         "nombre": "T-30"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 4.118,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 14499.412,
+         "transNature": "C",
+         "nombre": "T-30"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "T-32": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 35,
+         "codigo": 32,
+         "costo": 15450.193,
+         "transNature": "D",
+         "nombre": "T-32"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 4.388,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 15450.193,
+         "transNature": "C",
+         "nombre": "T-32"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "T-34": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 35,
+         "codigo": 34,
+         "costo": 16400.975,
+         "transNature": "D",
+         "nombre": "T-34"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 4.658,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 16400.975,
+         "transNature": "C",
+         "nombre": "T-34"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "T-36": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 35,
+         "codigo": 36,
+         "costo": 17391.372,
+         "transNature": "D",
+         "nombre": "T-36"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 4.939,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 17391.372,
+         "transNature": "C",
+         "nombre": "T-36"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "T-38": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 35,
+         "codigo": 38,
+         "costo": 18817.543,
+         "transNature": "D",
+         "nombre": "T-38"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 5.345,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 18817.543,
+         "transNature": "C",
+         "nombre": "T-38"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "T-40": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 35,
+         "codigo": 40,
+         "costo": 19332.55,
+         "transNature": "D",
+         "nombre": "T-40"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 5.491,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 19332.55,
+         "transNature": "C",
+         "nombre": "T-40"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "T-42": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 35,
+         "codigo": 42,
+         "costo": 20283.331,
+         "transNature": "D",
+         "nombre": "T-42"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 5.761,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 20283.331,
+         "transNature": "C",
+         "nombre": "T-42"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "T-44": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 35,
+         "codigo": 44,
+         "costo": 21234.112,
+         "transNature": "D",
+         "nombre": "T-44"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 6.031,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 21234.112,
+         "transNature": "C",
+         "nombre": "T-44"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "T-46": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 35,
+         "codigo": 46,
+         "costo": 22224.509,
+         "transNature": "D",
+         "nombre": "T-46"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 6.312,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 22224.509,
+         "transNature": "C",
+         "nombre": "T-46"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   },
+   "T-48": {
+      "0": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 35,
+         "codigo": 48,
+         "costo": 23175.29,
+         "transNature": "D",
+         "nombre": "T-48"
+      },
+      "1": {
+         "accountCode": 1410050000,
+         "cantBase": 6.582,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 23175.29,
+         "transNature": "C",
+         "nombre": "T-48"
+      },
+      "2": {
+         "accountCode": 1430050000,
+         "cantBase": 1,
+         "linea": 3,
+         "grupo": 46,
+         "codigo": 1,
+         "costo": 143.723,
+         "transNature": "C",
+         "nombre": "ZUNCHO"
+      }
+   }
+}

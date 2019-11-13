@@ -1,0 +1,3346 @@
+{
+   "H-08": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 23,
+         "codigo": 8,
+         "costo": 1921.37,
+         "transNature": "D",
+         "nombre": "H-08"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 0.546,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 1921.37,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "H-16": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 23,
+         "codigo": 16,
+         "costo": 3862.548,
+         "transNature": "D",
+         "nombre": "H-16"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 1.097,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 3862.548,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "H-18": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 23,
+         "codigo": 18,
+         "costo": 4337.939,
+         "transNature": "D",
+         "nombre": "H-18"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 1.232,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 4337.939,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "H-20": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 23,
+         "codigo": 20,
+         "costo": 4833.137,
+         "transNature": "D",
+         "nombre": "H-20"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 1.373,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 4833.137,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "H-22": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 23,
+         "codigo": 22,
+         "costo": 5308.528,
+         "transNature": "D",
+         "nombre": "H-22"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 1.508,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 5308.528,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "H-24": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 23,
+         "codigo": 24,
+         "costo": 8675.878,
+         "transNature": "D",
+         "nombre": "H-24"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 2.464,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 8675.878,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "H-26": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 23,
+         "codigo": 26,
+         "costo": 9418.676,
+         "transNature": "D",
+         "nombre": "H-26"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 2.675,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 9418.676,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "H-28": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 23,
+         "codigo": 28,
+         "costo": 10131.761,
+         "transNature": "D",
+         "nombre": "H-28"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 2.878,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 10131.761,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "H-30": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 23,
+         "codigo": 30,
+         "costo": 10874.559,
+         "transNature": "D",
+         "nombre": "H-30"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 3.089,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 10874.559,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "H-32": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 23,
+         "codigo": 32,
+         "costo": 11587.645,
+         "transNature": "D",
+         "nombre": "H-32"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 3.291,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 11587.645,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "H-34": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 23,
+         "codigo": 34,
+         "costo": 12300.731,
+         "transNature": "D",
+         "nombre": "H-34"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 3.494,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 12300.731,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "H-36": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 23,
+         "codigo": 36,
+         "costo": 13043.529,
+         "transNature": "D",
+         "nombre": "H-36"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 3.705,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 13043.529,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "H-38": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 23,
+         "codigo": 38,
+         "costo": 14113.157,
+         "transNature": "D",
+         "nombre": "H-38"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 4.008,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 14113.157,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "H-40": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 23,
+         "codigo": 40,
+         "costo": 14499.412,
+         "transNature": "D",
+         "nombre": "H-40"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 4.118,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 14499.412,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "H-42": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 23,
+         "codigo": 42,
+         "costo": 15212.498,
+         "transNature": "D",
+         "nombre": "H-42"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 4.321,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 15212.498,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "H-44": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 23,
+         "codigo": 44,
+         "costo": 15925.584,
+         "transNature": "D",
+         "nombre": "H-44"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 4.523,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 15925.584,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "H-46": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 23,
+         "codigo": 46,
+         "costo": 16668.382,
+         "transNature": "D",
+         "nombre": "H-46"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 4.734,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 16668.382,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "H-48": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 23,
+         "codigo": 48,
+         "costo": 17381.468,
+         "transNature": "D",
+         "nombre": "H-48"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 4.937,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 17381.468,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "K-08": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 24,
+         "codigo": 8,
+         "costo": 2766.773,
+         "transNature": "D",
+         "nombre": "K-08"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 0.786,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 2766.773,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "K-16": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 24,
+         "codigo": 16,
+         "costo": 5562.07,
+         "transNature": "D",
+         "nombre": "K-16"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 1.58,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 5562.07,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "K-18": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 24,
+         "codigo": 18,
+         "costo": 6218.109,
+         "transNature": "D",
+         "nombre": "K-18"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 1.766,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 6218.109,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "K-20": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 24,
+         "codigo": 20,
+         "costo": 6959.718,
+         "transNature": "D",
+         "nombre": "K-20"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 1.977,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 6959.718,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "K-22": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 24,
+         "codigo": 22,
+         "costo": 7644.28,
+         "transNature": "D",
+         "nombre": "K-22"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 2.171,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 7644.28,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "K-24": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 24,
+         "codigo": 24,
+         "costo": 11567.837,
+         "transNature": "D",
+         "nombre": "K-24"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 3.285,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 11567.837,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "K-26": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 24,
+         "codigo": 26,
+         "costo": 12558.234,
+         "transNature": "D",
+         "nombre": "K-26"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 3.567,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 12558.234,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "K-28": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 24,
+         "codigo": 28,
+         "costo": 13509.015,
+         "transNature": "D",
+         "nombre": "K-28"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 3.837,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 13509.015,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "K-30": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 24,
+         "codigo": 30,
+         "costo": 14499.412,
+         "transNature": "D",
+         "nombre": "K-30"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 4.118,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 14499.412,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "K-32": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 24,
+         "codigo": 32,
+         "costo": 15450.193,
+         "transNature": "D",
+         "nombre": "K-32"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 4.388,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 15450.193,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "K-34": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 24,
+         "codigo": 34,
+         "costo": 16400.975,
+         "transNature": "D",
+         "nombre": "K-34"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 4.658,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 16400.975,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "K-36": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 24,
+         "codigo": 36,
+         "costo": 17391.372,
+         "transNature": "D",
+         "nombre": "K-36"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 4.939,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 17391.372,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "K-38": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 24,
+         "codigo": 38,
+         "costo": 18817.543,
+         "transNature": "D",
+         "nombre": "K-38"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 5.345,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 18817.543,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "K-40": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 24,
+         "codigo": 40,
+         "costo": 19332.55,
+         "transNature": "D",
+         "nombre": "K-40"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 5.491,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 19332.55,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "K-42": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 24,
+         "codigo": 42,
+         "costo": 20283.331,
+         "transNature": "D",
+         "nombre": "K-42"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 5.761,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 20283.331,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "K-44": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 24,
+         "codigo": 44,
+         "costo": 21234.112,
+         "transNature": "D",
+         "nombre": "K-44"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 6.031,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 21234.112,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "K-46": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 24,
+         "codigo": 46,
+         "costo": 22224.509,
+         "transNature": "D",
+         "nombre": "K-46"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 6.312,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 22224.509,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "K-48": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 24,
+         "codigo": 48,
+         "costo": 23175.29,
+         "transNature": "D",
+         "nombre": "K-48"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 6.582,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 23175.29,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "L-08": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 25,
+         "codigo": 8,
+         "costo": 2536.209,
+         "transNature": "D",
+         "nombre": "L-08"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 0.72,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 2536.209,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "L-16": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 25,
+         "codigo": 16,
+         "costo": 5098.564,
+         "transNature": "D",
+         "nombre": "L-16"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 1.448,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 5098.564,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "L-18": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 25,
+         "codigo": 18,
+         "costo": 5726.079,
+         "transNature": "D",
+         "nombre": "L-18"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 1.626,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 5726.079,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "L-20": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 25,
+         "codigo": 20,
+         "costo": 6379.741,
+         "transNature": "D",
+         "nombre": "L-20"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 1.812,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 6379.741,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "L-22": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 25,
+         "codigo": 22,
+         "costo": 7007.257,
+         "transNature": "D",
+         "nombre": "L-22"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 1.99,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 7007.257,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "L-24": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 25,
+         "codigo": 24,
+         "costo": 7634.773,
+         "transNature": "D",
+         "nombre": "L-24"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 2.168,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 7634.773,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "L-26": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 25,
+         "codigo": 26,
+         "costo": 8288.435,
+         "transNature": "D",
+         "nombre": "L-26"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 2.354,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 8288.435,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "L-28": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 25,
+         "codigo": 28,
+         "costo": 8915.95,
+         "transNature": "D",
+         "nombre": "L-28"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 2.532,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 8915.95,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "L-30": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 25,
+         "codigo": 30,
+         "costo": 9569.612,
+         "transNature": "D",
+         "nombre": "L-30"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 2.718,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 9569.612,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "L-32": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 25,
+         "codigo": 32,
+         "costo": 10197.128,
+         "transNature": "D",
+         "nombre": "L-32"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 2.896,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 10197.128,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "L-34": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 25,
+         "codigo": 34,
+         "costo": 10824.643,
+         "transNature": "D",
+         "nombre": "L-34"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 3.074,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 10824.643,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "L-36": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 25,
+         "codigo": 36,
+         "costo": 11478.305,
+         "transNature": "D",
+         "nombre": "L-36"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 3.26,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 11478.305,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "L-38": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 25,
+         "codigo": 38,
+         "costo": 12419.579,
+         "transNature": "D",
+         "nombre": "L-38"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 3.527,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 12419.579,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "L-40": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 25,
+         "codigo": 40,
+         "costo": 12759.483,
+         "transNature": "D",
+         "nombre": "L-40"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 3.624,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 12759.483,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "L-42": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 25,
+         "codigo": 42,
+         "costo": 13386.998,
+         "transNature": "D",
+         "nombre": "L-42"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 3.802,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 13386.998,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "L-44": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 25,
+         "codigo": 44,
+         "costo": 14014.514,
+         "transNature": "D",
+         "nombre": "L-44"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 3.98,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 14014.514,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "L-46": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 25,
+         "codigo": 46,
+         "costo": 14668.176,
+         "transNature": "D",
+         "nombre": "L-46"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 4.166,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 14668.176,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "L-48": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 25,
+         "codigo": 48,
+         "costo": 15295.692,
+         "transNature": "D",
+         "nombre": "L-48"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 4.344,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 15295.692,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL 26 ROLLO"
+      }
+   },
+   "S-08": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 30,
+         "codigo": 8,
+         "costo": 1934.729,
+         "transNature": "D",
+         "nombre": "S-08"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 0.55,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 1934.729,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-10": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 30,
+         "codigo": 10,
+         "costo": 2360.369,
+         "transNature": "D",
+         "nombre": "S-10"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 0.67,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 2360.369,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-12": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 30,
+         "codigo": 12,
+         "costo": 2902.094,
+         "transNature": "D",
+         "nombre": "S-12"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 0.824,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 2902.094,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-14": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 30,
+         "codigo": 14,
+         "costo": 3289.039,
+         "transNature": "D",
+         "nombre": "S-14"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 0.934,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 3289.039,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-16": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 30,
+         "codigo": 16,
+         "costo": 3869.458,
+         "transNature": "D",
+         "nombre": "S-16"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 1.099,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 3869.458,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-18": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 30,
+         "codigo": 18,
+         "costo": 4217.709,
+         "transNature": "D",
+         "nombre": "S-18"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 1.198,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 4217.709,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-20": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 30,
+         "codigo": 20,
+         "costo": 4682.044,
+         "transNature": "D",
+         "nombre": "S-20"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 1.33,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 4682.044,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-22": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 30,
+         "codigo": 22,
+         "costo": 5146.379,
+         "transNature": "D",
+         "nombre": "S-22"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 1.462,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 5146.379,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-24": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 30,
+         "codigo": 24,
+         "costo": 5610.714,
+         "transNature": "D",
+         "nombre": "S-24"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 1.594,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 5610.714,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-26": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 30,
+         "codigo": 26,
+         "costo": 6133.091,
+         "transNature": "D",
+         "nombre": "S-26"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 1.742,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 6133.091,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-28": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 30,
+         "codigo": 28,
+         "costo": 6597.426,
+         "transNature": "D",
+         "nombre": "S-28"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 1.874,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 6597.426,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-30": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 30,
+         "codigo": 30,
+         "costo": 7081.108,
+         "transNature": "D",
+         "nombre": "S-30"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 2.011,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 7081.108,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-32": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 30,
+         "codigo": 32,
+         "costo": 7545.443,
+         "transNature": "D",
+         "nombre": "S-32"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 2.143,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 7545.443,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-34": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 30,
+         "codigo": 34,
+         "costo": 8009.778,
+         "transNature": "D",
+         "nombre": "S-34"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 2.275,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 8009.778,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-36": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 30,
+         "codigo": 36,
+         "costo": 8493.461,
+         "transNature": "D",
+         "nombre": "S-36"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 2.412,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 8493.461,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-38": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 30,
+         "codigo": 38,
+         "costo": 8957.796,
+         "transNature": "D",
+         "nombre": "S-38"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 2.544,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 8957.796,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-40": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 30,
+         "codigo": 40,
+         "costo": 9441.478,
+         "transNature": "D",
+         "nombre": "S-40"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 2.682,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 9441.478,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-42": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 30,
+         "codigo": 42,
+         "costo": 9905.813,
+         "transNature": "D",
+         "nombre": "S-42"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 2.813,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 9905.813,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-44": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 30,
+         "codigo": 44,
+         "costo": 10370.148,
+         "transNature": "D",
+         "nombre": "S-44"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 2.945,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 10370.148,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-46": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 30,
+         "codigo": 46,
+         "costo": 10853.83,
+         "transNature": "D",
+         "nombre": "S-46"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 3.083,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 10853.83,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-48": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 30,
+         "codigo": 48,
+         "costo": 11318.165,
+         "transNature": "D",
+         "nombre": "S-48"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 3.215,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 11318.165,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-08 PERFORADA": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 31,
+         "codigo": 8,
+         "costo": 1934.729,
+         "transNature": "D",
+         "nombre": "S-08 PERFORADA"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 0.55,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 1934.729,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-010 PERFORADA": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 31,
+         "codigo": 10,
+         "costo": 2360.369,
+         "transNature": "D",
+         "nombre": "S-010 PERFORADA"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 0.67,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 2360.369,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-012 PERFORADA": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 31,
+         "codigo": 12,
+         "costo": 2902.094,
+         "transNature": "D",
+         "nombre": "S-012 PERFORADA"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 0.824,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 2902.094,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-014 PERFORADA": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 31,
+         "codigo": 14,
+         "costo": 3289.039,
+         "transNature": "D",
+         "nombre": "S-014 PERFORADA"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 0.934,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 3289.039,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-016 PERFORADA": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 31,
+         "codigo": 16,
+         "costo": 3869.458,
+         "transNature": "D",
+         "nombre": "S-016 PERFORADA"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 1.099,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 3869.458,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-018 PERFORADA": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 31,
+         "codigo": 18,
+         "costo": 4217.709,
+         "transNature": "D",
+         "nombre": "S-018 PERFORADA"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 1.198,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 4217.709,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-020 PERFORADA": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 31,
+         "codigo": 20,
+         "costo": 4682.044,
+         "transNature": "D",
+         "nombre": "S-020 PERFORADA"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 1.33,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 4682.044,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-022 PERFORADA": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 31,
+         "codigo": 22,
+         "costo": 5146.379,
+         "transNature": "D",
+         "nombre": "S-022 PERFORADA"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 1.462,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 5146.379,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-024 PERFORADA": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 31,
+         "codigo": 24,
+         "costo": 5610.714,
+         "transNature": "D",
+         "nombre": "S-024 PERFORADA"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 1.594,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 5610.714,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-026 PERFORADA": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 31,
+         "codigo": 26,
+         "costo": 6133.091,
+         "transNature": "D",
+         "nombre": "S-026 PERFORADA"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 1.742,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 6133.091,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-028 PERFORADA": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 31,
+         "codigo": 28,
+         "costo": 6597.426,
+         "transNature": "D",
+         "nombre": "S-028 PERFORADA"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 1.874,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 6597.426,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-030 PERFORADA": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 31,
+         "codigo": 30,
+         "costo": 7081.108,
+         "transNature": "D",
+         "nombre": "S-030 PERFORADA"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 2.011,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 7081.108,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-032 PERFORADA": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 31,
+         "codigo": 32,
+         "costo": 7545.443,
+         "transNature": "D",
+         "nombre": "S-032 PERFORADA"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 2.143,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 7545.443,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-034 PERFORADA": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 31,
+         "codigo": 34,
+         "costo": 8009.778,
+         "transNature": "D",
+         "nombre": "S-034 PERFORADA"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 2.275,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 8009.778,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-036 PERFORADA": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 31,
+         "codigo": 36,
+         "costo": 8493.461,
+         "transNature": "D",
+         "nombre": "S-036 PERFORADA"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 2.412,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 8493.461,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-038 PERFORADA": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 31,
+         "codigo": 38,
+         "costo": 8957.796,
+         "transNature": "D",
+         "nombre": "S-038 PERFORADA"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 2.544,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 8957.796,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-040 PERFORADA": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 31,
+         "codigo": 40,
+         "costo": 9441.478,
+         "transNature": "D",
+         "nombre": "S-040 PERFORADA"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 2.682,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 9441.478,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-042 PERFORADA": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 31,
+         "codigo": 42,
+         "costo": 9905.813,
+         "transNature": "D",
+         "nombre": "S-042 PERFORADA"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 2.813,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 9905.813,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-044 PERFORADA": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 31,
+         "codigo": 44,
+         "costo": 10370.148,
+         "transNature": "D",
+         "nombre": "S-044 PERFORADA"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 2.945,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 10370.148,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-046 PERFORADA": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 31,
+         "codigo": 46,
+         "costo": 10853.83,
+         "transNature": "D",
+         "nombre": "S-046 PERFORADA"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 3.083,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 10853.83,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "S-048 PERFORADA": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 31,
+         "codigo": 48,
+         "costo": 11318.165,
+         "transNature": "D",
+         "nombre": "S-048 PERFORADA"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 3.215,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 11318.165,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "T-08": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 35,
+         "codigo": 8,
+         "costo": 2882.055,
+         "transNature": "D",
+         "nombre": "T-08"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 0.819,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 2882.055,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "T-16": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 35,
+         "codigo": 16,
+         "costo": 5793.823,
+         "transNature": "D",
+         "nombre": "T-16"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 1.646,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 5793.823,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "T-18": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 35,
+         "codigo": 18,
+         "costo": 6506.908,
+         "transNature": "D",
+         "nombre": "T-18"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 1.848,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 6506.908,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "T-20": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 35,
+         "codigo": 20,
+         "costo": 7249.706,
+         "transNature": "D",
+         "nombre": "T-20"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 2.059,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 7249.706,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "T-22": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 35,
+         "codigo": 22,
+         "costo": 7962.792,
+         "transNature": "D",
+         "nombre": "T-22"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 2.262,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 7962.792,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "T-24": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 35,
+         "codigo": 24,
+         "costo": 11567.837,
+         "transNature": "D",
+         "nombre": "T-24"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 3.285,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 11567.837,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "T-26": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 35,
+         "codigo": 26,
+         "costo": 12558.234,
+         "transNature": "D",
+         "nombre": "T-26"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 3.567,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 12558.234,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "T-28": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 35,
+         "codigo": 28,
+         "costo": 13509.015,
+         "transNature": "D",
+         "nombre": "T-28"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 3.837,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 13509.015,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "T-30": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 35,
+         "codigo": 30,
+         "costo": 14499.412,
+         "transNature": "D",
+         "nombre": "T-30"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 4.118,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 14499.412,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "T-32": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 35,
+         "codigo": 32,
+         "costo": 15450.193,
+         "transNature": "D",
+         "nombre": "T-32"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 4.388,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 15450.193,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "T-34": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 35,
+         "codigo": 34,
+         "costo": 16400.975,
+         "transNature": "D",
+         "nombre": "T-34"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 4.658,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 16400.975,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "T-36": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 35,
+         "codigo": 36,
+         "costo": 17391.372,
+         "transNature": "D",
+         "nombre": "T-36"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 4.939,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 17391.372,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "T-38": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 35,
+         "codigo": 38,
+         "costo": 18817.543,
+         "transNature": "D",
+         "nombre": "T-38"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 5.345,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 18817.543,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "T-40": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 35,
+         "codigo": 40,
+         "costo": 19332.55,
+         "transNature": "D",
+         "nombre": "T-40"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 5.491,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 19332.55,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "T-42": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 35,
+         "codigo": 42,
+         "costo": 20283.331,
+         "transNature": "D",
+         "nombre": "T-42"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 5.761,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 20283.331,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "T-44": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 35,
+         "codigo": 44,
+         "costo": 21234.112,
+         "transNature": "D",
+         "nombre": "T-44"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 6.031,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 21234.112,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "T-46": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 35,
+         "codigo": 46,
+         "costo": 22224.509,
+         "transNature": "D",
+         "nombre": "T-46"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 6.312,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 22224.509,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "T-48": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 35,
+         "codigo": 48,
+         "costo": 23175.29,
+         "transNature": "D",
+         "nombre": "T-48"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 6.582,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 23175.29,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "U-08": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 39,
+         "codigo": 8,
+         "costo": 1354.31,
+         "transNature": "D",
+         "nombre": "U-08"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 0.385,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 1354.31,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "U-10": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 39,
+         "codigo": 10,
+         "costo": 1652.259,
+         "transNature": "D",
+         "nombre": "U-10"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 0.469,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 1652.259,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "U-12": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 39,
+         "codigo": 12,
+         "costo": 2031.466,
+         "transNature": "D",
+         "nombre": "U-12"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 0.577,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 2031.466,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "U-14": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 39,
+         "codigo": 14,
+         "costo": 2302.328,
+         "transNature": "D",
+         "nombre": "U-14"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 0.654,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 2302.328,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "U-16": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 39,
+         "codigo": 16,
+         "costo": 2627.362,
+         "transNature": "D",
+         "nombre": "U-16"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 0.746,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 2627.362,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "U-18": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 39,
+         "codigo": 18,
+         "costo": 2952.397,
+         "transNature": "D",
+         "nombre": "U-18"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 0.839,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 2952.397,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "U-20": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 39,
+         "codigo": 20,
+         "costo": 3277.431,
+         "transNature": "D",
+         "nombre": "U-20"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 0.931,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 3277.431,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "U-22": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 39,
+         "codigo": 22,
+         "costo": 3602.466,
+         "transNature": "D",
+         "nombre": "U-22"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 1.023,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 3602.466,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "U-24": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 39,
+         "codigo": 24,
+         "costo": 3927.5,
+         "transNature": "D",
+         "nombre": "U-24"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 1.115,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 3927.5,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "U-26": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 39,
+         "codigo": 26,
+         "costo": 4380.779,
+         "transNature": "D",
+         "nombre": "U-26"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 1.244,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 4380.779,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "U-28": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 39,
+         "codigo": 28,
+         "costo": 4712.447,
+         "transNature": "D",
+         "nombre": "U-28"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 1.338,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 4712.447,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "U-30": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 39,
+         "codigo": 30,
+         "costo": 5057.935,
+         "transNature": "D",
+         "nombre": "U-30"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 1.437,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 5057.935,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "U-32": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 39,
+         "codigo": 32,
+         "costo": 5389.602,
+         "transNature": "D",
+         "nombre": "U-32"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 1.531,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 5389.602,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "U-34": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 39,
+         "codigo": 34,
+         "costo": 5721.27,
+         "transNature": "D",
+         "nombre": "U-34"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 1.625,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 5721.27,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "U-36": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 39,
+         "codigo": 36,
+         "costo": 6066.758,
+         "transNature": "D",
+         "nombre": "U-36"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 1.723,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 6066.758,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "U-38": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 39,
+         "codigo": 38,
+         "costo": 6398.425,
+         "transNature": "D",
+         "nombre": "U-38"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 1.817,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 6398.425,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "U-40": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 39,
+         "codigo": 40,
+         "costo": 6743.913,
+         "transNature": "D",
+         "nombre": "U-40"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 1.915,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 6743.913,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "U-42": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 39,
+         "codigo": 42,
+         "costo": 7075.581,
+         "transNature": "D",
+         "nombre": "U-42"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 2.01,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 7075.581,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "U-44": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 39,
+         "codigo": 44,
+         "costo": 7407.248,
+         "transNature": "D",
+         "nombre": "U-44"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 2.104,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 7407.248,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "U-46": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 39,
+         "codigo": 46,
+         "costo": 7752.736,
+         "transNature": "D",
+         "nombre": "U-46"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 2.202,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 7752.736,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "U-48": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 39,
+         "codigo": 48,
+         "costo": 8084.404,
+         "transNature": "D",
+         "nombre": "U-48"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 2.296,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 3,
+         "costo": 8084.404,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "X-16": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 41,
+         "codigo": 16,
+         "costo": 8852.961,
+         "transNature": "D",
+         "nombre": "X-16"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 2.514,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 8852.961,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "X-18": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 41,
+         "codigo": 18,
+         "costo": 9942.556,
+         "transNature": "D",
+         "nombre": "X-18"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 2.824,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 9942.556,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "X-20": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 41,
+         "codigo": 20,
+         "costo": 11077.551,
+         "transNature": "D",
+         "nombre": "X-20"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 3.146,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 11077.551,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "X-22": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 41,
+         "codigo": 22,
+         "costo": 12167.146,
+         "transNature": "D",
+         "nombre": "X-22"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 3.456,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 12167.146,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "X-24": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 41,
+         "codigo": 24,
+         "costo": 13256.741,
+         "transNature": "D",
+         "nombre": "X-24"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 3.765,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 13256.741,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "X-26": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 41,
+         "codigo": 26,
+         "costo": 14391.736,
+         "transNature": "D",
+         "nombre": "X-26"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 4.088,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 14391.736,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "X-28": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 41,
+         "codigo": 28,
+         "costo": 15481.332,
+         "transNature": "D",
+         "nombre": "X-28"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 4.397,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 15481.332,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "X-30": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 41,
+         "codigo": 30,
+         "costo": 16616.327,
+         "transNature": "D",
+         "nombre": "X-30"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 4.719,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 16616.327,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "X-32": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 41,
+         "codigo": 32,
+         "costo": 17705.922,
+         "transNature": "D",
+         "nombre": "X-32"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 5.029,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 17705.922,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "X-34": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 41,
+         "codigo": 34,
+         "costo": 18795.517,
+         "transNature": "D",
+         "nombre": "X-34"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 5.338,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 18795.517,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "X-36": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 41,
+         "codigo": 36,
+         "costo": 19930.512,
+         "transNature": "D",
+         "nombre": "X-36"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 5.661,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 19930.512,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "X-38": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 41,
+         "codigo": 38,
+         "costo": 21564.905,
+         "transNature": "D",
+         "nombre": "X-38"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 6.125,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 21564.905,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "X-40": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 41,
+         "codigo": 40,
+         "costo": 22155.102,
+         "transNature": "D",
+         "nombre": "X-40"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 6.292,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 22155.102,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "X-42": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 41,
+         "codigo": 42,
+         "costo": 23244.697,
+         "transNature": "D",
+         "nombre": "X-42"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 6.602,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 23244.697,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "X-44": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 41,
+         "codigo": 44,
+         "costo": 24334.292,
+         "transNature": "D",
+         "nombre": "X-44"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 6.911,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 24334.292,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "X-46": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 41,
+         "codigo": 46,
+         "costo": 25469.287,
+         "transNature": "D",
+         "nombre": "X-46"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 7.234,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 25469.287,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   },
+   "X-48": {
+      "0": {
+         "accountCode": 1410050000,
+         "cantBase": 1,
+         "linea": 2,
+         "grupo": 41,
+         "codigo": 48,
+         "costo": 26558.883,
+         "transNature": "D",
+         "nombre": "X-48"
+      },
+      "1": {
+         "accountCode": 1405050000,
+         "cantBase": 7.543,
+         "linea": 1,
+         "grupo": 7,
+         "codigo": 5,
+         "costo": 26558.883,
+         "transNature": "C",
+         "nombre": "LAMINA GAL CAL  22 ROLLO"
+      }
+   }
+}

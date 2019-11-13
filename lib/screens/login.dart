@@ -307,11 +307,14 @@ class _LoginPageState extends State<LoginPage> {
       body: ListView(
         children: <Widget>[
           Container(
-            child: Image.asset(
-              "assets/logo.png",
-              scale: 0.9,
-              height: 180,
-              width: 500,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Image.asset(
+                "assets/logo.png",
+                scale: 0.9,
+                height: 180,
+                width: 500,
+              ),
             ),
           ),
           Container(
@@ -432,7 +435,14 @@ Future<Map<String, dynamic>> authenticate(String email, String password,
     message = 'E-mail ya registrado.';
   } else if (errorAuth?.code == 'ERROR_USER_NOT_FOUND') {
     message = 'Usuario no registrado.';
+  } else if (errorAuth?.code == 'ERROR_NETWORK_REQUEST_FAILED') {
+    message = 'Por favor revise su conexión a internet.';
   }
+
+
+
+
+
 
   //_isLoading = false;
   //notifyListeners();

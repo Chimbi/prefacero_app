@@ -1,130 +1,120 @@
-import 'package:flutter/material.dart';
-import 'package:prefacero_app/screens/product_manager.dart';
-import 'package:firebase_database/firebase_database.dart';
-import '../model/producto.dart';
-import '../model/order.dart';
+import 'dart:io';
 
-class OrderManagement extends StatefulWidget {
+
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
+import 'package:path_provider/path_provider.dart';
+import 'package:prefacero_app/model/order.dart';
+import 'package:prefacero_app/screens/pedido.dart';
+import 'package:prefacero_app/utils/db.dart';
+//import 'package:pdf/pdf.dart';
+import 'package:provider/provider.dart';
+
+  class PedidosPage extends StatefulWidget {
   @override
-  _OrderManagementState createState() => _OrderManagementState();
+  _PedidosPageState createState() => _PedidosPageState();
 }
 
-class _OrderManagementState extends State<OrderManagement> {
-  String fakeUserId = "29IJRlHxM3e2kQJQbFPehNSYBu43";
-  List<Producto> listaPed = List();
-  Producto producto;
-  Order pedido;
-  final FirebaseDatabase database = FirebaseDatabase.instance;
-  DatabaseReference dataRef;
-  DatabaseReference refPedido;
-  DatabaseReference pedidoUid;
-  var initEntry;
+class _PedidosPageState extends State<PedidosPage> {
+  NumberFormat moneyFormat;
 
   @override
   void initState() {
-    print("begin init");
-    producto = Producto();
-    dataRef = database.reference().child("inventario");
-    dataRef.onChildAdded.listen(_onAdded);
-    refPedido = database.reference().child("pedido");
-    pedidoUid = refPedido.child(fakeUserId);
-    //dataRef.onChildChanged.listen(_onEntryChanged);
-    print("last init");
-
-    super.initState();
+    moneyFormat = NumberFormat("\$ ###,###,###", 'en_US');
   }
 
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: GridView(
-        physics: BouncingScrollPhysics(),
-        // if you want IOS bouncing effect, otherwise remove this line
-        gridDelegate:
-            SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
-        //change the number as you want
-        children: listaPed.map((entry) {
-          if (entry != null) {
-            return Card(
-                child: Column(
-              children: <Widget>[
-                ListTile(
-                  title: Text(
-                    entry.nombre == null ? "null" : entry.nombre,
-                    style: TextStyle(
-                        fontSize: 20.0,
-                        color: Colors.blueAccent,
-                        fontWeight: FontWeight.bold),
-                  ),
-                  subtitle: Column(
-                    children: <Widget>[
-                      Text(
-                        "Cant: ${entry.disp}",
-                        style: TextStyle(
-                            fontSize: 18.0, fontStyle: FontStyle.italic),
-                      ),
-                      Text(
-                        "Cant: 0",
-                        style: TextStyle(
-                            fontSize: 18.0, fontStyle: FontStyle.italic),
-                      ),
-                    ],
-                  ),
-                ),
-                entry.disp == 0 ? RaisedButton(child: Text("Agregar"), onPressed: () => _addOne(entry)) : Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: <Widget>[
-                    IconButton(
-                        icon: Icon(Icons.remove),
-                        onPressed: () => _removeOne(entry)),
-                    IconButton(
-                        icon: Icon(Icons.add), onPressed: () => _addOne(entry))
-                  ],
-                )
-              ],
-            ));
-          } else
-            print("null");
-        }).toList(),
+  /*
+  Future<void> _saveAsFile(String polizaRef) async {
+    Poliza poliza = await DatabaseService().getPolizaId(polizaRef);
+    final Directory appDocDir = await getApplicationDocumentsDirectory();
+    final String appDocPath = appDocDir.path;
+    final File file = File(appDocPath + '/' + 'document.pdf');
+    print('Save as file ${file.path} ...');
+    await file.writeAsBytes((await generateDocument(PdfPageFormat.a3, poliza)).save());
+    Navigator.push<dynamic>(
+      context,
+      MaterialPageRoute<dynamic>(
+          builder: (BuildContext context) => PdfViewer(file: file)),
+    );
+  }
+*/
+  /*
+  Future<void> _getPedido(String polizaRef) async {
+    Poliza poliza = await DatabaseService().getPedidoId(pedidoRef);
+    Map<String, dynamic> uploads = await DatabaseService().getUploads(poliza.polizaId);
+    Navigator.push<dynamic>(
+      context,
+      MaterialPageRoute<dynamic>(
+          builder: (BuildContext context) => HistoryPage(poliza: poliza, uploads: uploads)),
+    );
+  }
+*/
+
+  Future<void> _getPedido(String polizaRef) async {
+    Order pedido = await DatabaseService().getPedidoId(polizaRef);
+    Navigator.push<dynamic>(
+      context,
+      MaterialPageRoute<dynamic>(
+          builder: (BuildContext context) => PedidoPage(pedido)),
+    );
+  }
+
+
+  Widget _builListItem(BuildContext context, data) {
+    //var poliza = Poliza.fromMap(data.data);
+    return Card(
+      elevation: 7.0,
+      child: ListTile(
+        onTap: () => _getPedido(data.key),
+        leading: Icon(Icons.business_center), //leading: data.issueState == 'Emitida' ? Icon(Icons.check_circle, color: Theme.of(context).buttonColor, size: 35.0,) : data.issueState == 'Borrador' ? Icon(Icons.mail_outline, color: Theme.of(context).accentColor, size: 30.0) : Icon(Icons.clear, color: Colors.red, size: 30.0),
+        //trailing: IconButton(icon: Icon(Icons.picture_as_pdf, color: Colors.red,), onPressed: () => _saveAsFile(data.polizaId)),
+        title: Text("Ref.Pedido ${data.refPedido}"),
+        subtitle: Column(
+          children: <Widget>[
+            Text("Valor: ${moneyFormat.format(data.valorTotal)}",style: TextStyle(fontWeight: FontWeight.bold),),
+            Text("uid: ${data.uid}"),
+            Text("Fecha: ${data.fechaSolicitud}"),
+            Text("Key: ${data.key}")
+          ],
+        ),
       ),
     );
   }
 
-  _onAdded(Event event) {
-    setState(() {
-      print("On entry added");
-      listaPed.add(Producto.fromSnapshot(event.snapshot));
-    });
-  }
-
-  void _removeOne(Producto entry) {
-    setState(() {
-      if(entry.disp>0) {
-        pedidoUid.child(entry.key).update(
-            {"disp": entry.disp - 1}); //update disp
-        listaPed[listaPed.indexOf(entry)].disp = entry.disp - 1;
-      }
-    });
-  }
-
-  _addOne(Producto entry) {
-    setState(() {
-      if(entry.disp > 0) {
-        pedidoUid.child(entry.key).update(
-            {"disp": entry.disp + 1}); //update disp
-        listaPed[listaPed.indexOf(entry)].disp = entry.disp + 1;
-      } else {
-        pedidoUid.child(entry.key).set(
-            {
-              "nombre": entry.nombre,
-              "precio": entry.precio,
-              "tiempoFab" : entry.tiempoFab,
-              "disp": entry.disp + 1,
-              "costo": entry.costo
-            });
-        listaPed[listaPed.indexOf(entry)].disp = entry.disp + 1;// Create item in the pedidos database
-      }
-
-    });
+  @override
+  Widget build(BuildContext context) {
+    var user = Provider.of<FirebaseUser>(context);
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Pedidos"),
+      ),
+      body: FutureBuilder(
+        future: DatabaseService().getListaPedidos(user),
+        builder: (context, snapshot) {
+          if (!snapshot.hasData) return Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                CircularProgressIndicator(),
+                SizedBox(height:20.0),
+                Text("Cargando informacion ..."),
+              ],
+            ),
+          ); return RefreshIndicator(
+            onRefresh: (){
+              setState(() {
+                snapshot.requireData;
+              });
+              return Future.delayed(Duration(seconds: 1));
+            },
+            child: ListView.builder(
+                itemCount: snapshot.data.length,
+                itemBuilder: (context, index) =>
+                    _builListItem(context, snapshot.data[index])),
+          );
+        },
+      ),
+    );
   }
 }

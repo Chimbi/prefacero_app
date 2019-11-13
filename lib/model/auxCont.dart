@@ -1,4 +1,4 @@
-import 'package:firebase_database/firebase_database.dart';
+//import 'package:firebase_database/firebase_database.dart';
 import 'package:meta/meta.dart';
 
 class Auxiliar {
@@ -22,7 +22,7 @@ class Auxiliar {
       this.tagCode,
       this.transNature,
       this.valueFactor});
-
+/*
   Auxiliar.fromSnapshot(DataSnapshot snapshot, double value) {
     //key = snapshot.key;
     accType = snapshot.value['accType'];
@@ -34,6 +34,7 @@ class Auxiliar {
     tagCode = snapshot.value['tagCode'];
     transNature = snapshot.value['transNature'];
   }
+  */
   Auxiliar.fromMap(Map<String, dynamic> map){
     key = map['key'];
     accType = map['accType'];

@@ -1,4 +1,4 @@
-import 'package:firebase_database/firebase_database.dart';
+//import 'package:firebase_database/firebase_database.dart';
 import 'package:meta/meta.dart';
 
 class JournalEntry {
@@ -40,7 +40,7 @@ class JournalEntry {
       @required this.hint,
       this.sumZero,
       @required this.entry});
-
+/*
   fromSnapshot(DataSnapshot snapshot){
       key = snapshot.key;
       tipoCompr = snapshot.value["tipoCompr"];
@@ -53,7 +53,7 @@ class JournalEntry {
       hint = snapshot.value["hint"];
       sumZero = snapshot.value["sum_zero"];
     }
-
+*/
   toJson() {
     return {
       "tipoCompr" : tipoCompr,

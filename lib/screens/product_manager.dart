@@ -1,3 +1,4 @@
+/*
 import 'package:flutter/material.dart';
 import '../model/producto.dart';
 import 'package:firebase_database/firebase_database.dart';
@@ -205,3 +206,4 @@ class _ProductManagerState extends State<ProductManager> {
     showDialog(context: context, builder: (BuildContext context) => alert);
   }
 }
+*/

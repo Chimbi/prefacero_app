@@ -1,9 +1,10 @@
+/*
 import 'package:flutter/material.dart';
 import 'package:prefacero_app/screens/product_manager.dart';
 import 'package:prefacero_app/screens/asientos.dart';
 import '../model/transaccion.dart';
 import '../model/auxCont.dart';
-import 'pedidos.dart';
+import 'pedidosOld.dart';
 import 'simple.dart';
 
 
@@ -22,7 +23,7 @@ class Home extends StatelessWidget {
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-/*
+
 import 'dart:async';
 import 'dart:convert' show json;
 

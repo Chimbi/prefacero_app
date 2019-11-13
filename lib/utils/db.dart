@@ -1,19 +1,159 @@
 
-/*
-import 'package:appsolidariav3/model/amparoModel.dart';
-import 'package:appsolidariav3/model/auxiliarModel.dart';
-import 'package:appsolidariav3/model/polizaModel.dart';
-
+import 'package:prefacero_app/model/order.dart';
+import 'package:prefacero_app/model/produccion.dart';
+import 'package:prefacero_app/model/regContable.dart';
+import 'package:prefacero_app/model/user.dart';
 import 'package:prefacero_app/utils/auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:prefacero_app/model/producto.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/material.dart';
 import 'dart:async';
 
 class DatabaseService {
 
   final Firestore _db = Firestore.instance;
   final AuthService auth = AuthService();
+
+  Future<Producto> getProd(String prod) async{
+    var snap = await _db.collection('Producto').document('$prod').get();
+    return Producto.fromMap(snap.data);
+  }
+
+  Future<DocumentReference> setProd(Map<String,dynamic> json) async{
+    DocumentReference pedidoRef = Firestore.instance.collection('Producto').document("${json["nombre"]}");
+    await pedidoRef.setData(json);
+    return pedidoRef;
+  }
+
+  Future<Produccion> getProduccion(String prod, cantidad) async{
+    Produccion infoProd;
+    var snap = await _db.collection('Producto/$prod/Produccion').document('infoProduccion').get();
+    infoProd = Produccion.fromMap(snap.data);
+    infoProd.laminas = (cantidad/infoProd.cantLam).ceil();
+    infoProd.cantidad =  infoProd.laminas * infoProd.cantLam;  //Cantidad de producto recalculado
+    return infoProd;
+  }
+
+  Future<DocumentReference> setRegContable(Map<String,dynamic> json, String key, String producto) async{
+    DocumentReference pedidoRef = Firestore.instance.collection('Producto/$producto/Contabilidad').document("Terminado");
+    var jsonNuevo = {
+      "entry" : {
+        "$key" : json
+      }
+    };
+    print("JsonNuevo: ${jsonNuevo.toString()}");
+    await pedidoRef.setData(jsonNuevo, merge: true);
+    return pedidoRef;
+  }
+
+  Future<DocumentReference> setInfoProduccion(Map<String,dynamic> json, String producto) async{
+    print("Guardar producto: $producto");
+    DocumentReference pedidoRef = Firestore.instance.collection('Producto/$producto/Produccion').document("infoProduccion");
+    await pedidoRef.setData(json, merge: true);
+    return pedidoRef;
+  }
+
+  Future<DocumentReference> setOrdenProduccion(List<Produccion> listProduccion) async {
+    OrdenProduccion ordenProduccion = OrdenProduccion();
+    Map<String, dynamic> map = {};
+    DocumentReference ordenRef = Firestore.instance.collection('ordenProduccion').document();
+    ordenProduccion.key = ordenRef.documentID;
+    ordenProduccion.fechaSolicitud = DateTime.now();
+    ordenRef.setData(ordenProduccion.toMap());
+    listProduccion.forEach((prod){
+      map.addAll(prod.toMap());
+    });
+    print(map);
+    return ordenRef;
+  }
+
+
+  Future<DocumentReference> setPedido(Order pedido) async {
+    //Generate the document id for pedido
+    DocumentReference pedidoRef = Firestore.instance.collection('pedidos').document();
+    pedido.key = pedidoRef.documentID;
+    //TODO agregar funcionalidad de horas y dias habiles
+    pedido.fechaSolicitud = DateTime.now();
+    await pedidoRef.setData(pedido.toMap());
+    DocumentReference detalleRef = pedidoRef.collection('detallePedido').document("pedido");
+    //Save amparos to Firestore
+    pedido.listaProd.forEach((p){
+      print("PolizaRef: $pedidoRef");
+      detalleRef.setData(
+        {
+          "${p.nombre}": p.disp
+
+        }, merge: true
+      )
+          .then((_)=>print("Agregado Correctamente ${p.nombre}"))
+          .catchError((error) => print("Algo salio mal $error"));
+    });
+    return pedidoRef;
+  }
+
+  Future<List<Order>> getListaPedidos(FirebaseUser user) async{
+    QuerySnapshot query =  await _db.collection('pedidos').where('uid',isEqualTo: user.uid).limit(15).getDocuments();
+    var listaPedidos = query.documents.map((doc) async {
+      var pedido = Order.fromMap(doc.data);
+      return pedido;
+    }).toList();
+    print("Lista pedidos ${listaPedidos.toString()}");
+    return Future.wait(listaPedidos);
+  }
+
+  Future<List<RegContable>> getInfoContable(Producto prod) async{
+    print("getInfoContable ejecutada");
+      QuerySnapshot snap =  await _db.collection('Producto/${prod.nombre}/Contabilidad/').getDocuments();
+      Map<String,dynamic> map;
+      List<RegContable> listaCon = List();
+      if(snap != null){
+        map = snap.documents.first.data["entry"].cast<String,dynamic>();
+        map.forEach((k,V){
+          listaCon.add(RegContable.fromMap(V.cast<String,dynamic>(),prod.disp));
+        });
+        print("List Contable prod ${prod.nombre}: $listaCon");
+        return listaCon;
+      } print("No hay datos");
+  }
+
+  Future<List<DocumentSnapshot>> getPedidoUser(FirebaseUser user) async{
+    return _db.collection('Polizas').where('uid',isEqualTo: user.uid).getDocuments().then((val){
+      //Print lista document id polizas
+      val.documents.forEach((d){
+        print("getPoliza ${d.documentID}");
+      });
+      return val.documents;
+    });
+  }
+
+  Future<Order> getPedidoId(String docId) async{
+    print("DocumentId: $docId");
+    DocumentSnapshot doc =  await _db.collection('pedidos').document('$docId').get();//collection('detallePedido').document('pedido').get();
+    print("Doc: ${doc.data.length}");
+    var pedido = Order.fromMap(doc.data);
+    print("Pedido: ${pedido.toString()}");
+
+    var productos = await getProductos(docId);
+    pedido.listaProd = productos;
+    return pedido;
+  }
+
+  Future<List<Producto>> getProductos(String documentID) async {
+    List<Producto> listProd = List();
+    DocumentSnapshot doc =  await _db.collection('pedidos').document(documentID).collection('detallePedido').document('pedido').get();
+    doc.data.forEach((k,V){
+      listProd.add(Producto(nombre: k, disp: V));
+    });
+    return listProd;
+  }
+
+  Future<Cliente> getCliente(String cliente) async {
+    DocumentSnapshot doc = await _db.collection('users').document(cliente).get();
+    return Cliente.fromMap(doc.data);
+  }
+
+/*
+
 
   Future<Map> getQuiz(quizId){
     _db.collection('quizzes')
@@ -269,5 +409,5 @@ loadData() async {
   print("Data description: ${data['description']}");
 
 }
-
 */
+}

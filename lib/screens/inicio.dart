@@ -19,10 +19,11 @@ class MenuRoute {
 
 final List<MenuRoute> menu = <MenuRoute>[
   MenuRoute("Nuevo Pedido", '/pedido', Icon(Icons.add, size: 60.0, color: backgroundCol)),
+  MenuRoute("Orden Produccion", '/orden', Icon(Icons.build , size: 60.0, color: backgroundCol)),
   MenuRoute("Terceros", '/terceros', Icon(Icons.person_add, size: 60.0, color: backgroundCol)),
   MenuRoute("Historico", '/pedidos', Icon(Icons.history, size: 60.0, color: backgroundCol)),
-  //MenuRoute("PDF", '/pdfdemo', Icon(Icons.picture_as_pdf, size: 60.0, color: amarilloSolidaria1)),
-  //MenuRoute("CSV Test", '/csv', Icon(Icons.add_circle_outline, size: 60.0, color: amarilloSolidaria1)),
+  MenuRoute("Load Info", '/loadJson', Icon(Icons.cloud_upload, size: 60.0, color: backgroundCol)),
+  MenuRoute("CSV Test", '/csv', Icon(Icons.add_circle_outline, size: 60.0, color: backgroundCol)),
   MenuRoute("Usuario", '/profile', Icon(Icons.person_outline, size: 60.0, color: backgroundCol)),
 ];
 
@@ -42,7 +43,7 @@ class _PaginaInicioState extends State<PaginaInicio> {
     var user = Provider.of<FirebaseUser>(context);
     final drawerHeader = UserAccountsDrawerHeader(
       accountEmail: Text(user.email),
-      //accountName: polizaObj.intermediary != null ? Text('${polizaObj.intermediary.pointOfSale}'): Text("No registrado"),
+      accountName: Text("Cuenta"),
       //accountEmail: polizaObj.intermediary != null ? Text('${polizaObj.intermediary.email}'): Container(),
       currentAccountPicture: CircleAvatar(
         child: Image.asset('assets/logo.png'),
@@ -89,10 +90,12 @@ class _PaginaInicioState extends State<PaginaInicio> {
             floating: true,
             expandedHeight: 160.0,
             flexibleSpace: FlexibleSpaceBar(
-              title: Text("Prefacero App"),
-              background: Image.asset(
-                'assets/logo1.png',
-                fit: BoxFit.scaleDown,
+              background: Padding(
+                padding: const EdgeInsets.all(50.0),
+                child: Image.asset(
+                  'assets/logo.png',
+                  fit: BoxFit.scaleDown,
+                ),
               ),
             ),
           ),
