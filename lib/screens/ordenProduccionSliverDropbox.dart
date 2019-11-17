@@ -295,7 +295,7 @@ class _ProduccionSliverDropBoxState extends State<ProduccionSliverDropBox> {
                         //var path = await generateCsv(pedido);
                         //await sendMessage(path);
                         //var map = await DatabaseService().getInfoContable();
-                        await DatabaseService().setOrdenProduccion(produccionList).then((_) {
+                        DatabaseService().setOrdenProduccion(produccionList).then((_) {
                           showDialog<void>(
                             context: context,
                             barrierDismissible: false, // user must tap button!

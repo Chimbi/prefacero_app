@@ -18,7 +18,7 @@ class Produccion{
 
 
   factory Produccion.fromMap(Map<String, dynamic> map) => Produccion(
-    key: map['key'], cantAdicional: map['cantAdicional'], prodAdicional: map['prodAdicional'], cantLam: map['cantLam'], des: map['des'],
+    key: map['key'], cantAdicional: map['cantAdicional'], prodAdicional: map['prodAdicional'], cantLam: map['cantLam'], des: map['des'].toDouble(),
     kilosLamina: map['kilosLamina'], longLamina: map['longLamina'], nombre: map['nombre'],
   );
 

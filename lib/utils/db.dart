@@ -61,9 +61,13 @@ class DatabaseService {
     ordenProduccion.fechaSolicitud = DateTime.now();
     ordenRef.setData(ordenProduccion.toMap());
     listProduccion.forEach((prod){
+      ordenRef.setData({
+        "ordenProduccion": {prod.nombre : prod.toMap()}
+      },merge: true);
+      print("Producto en Orden: ${prod.toMap()}");
       map.addAll(prod.toMap());
     });
-    print(map);
+    print("Map: $map");
     return ordenRef;
   }
 

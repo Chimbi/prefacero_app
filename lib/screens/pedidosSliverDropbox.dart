@@ -366,12 +366,13 @@ class _PedidosSliverDropBoxState extends State<PedidosSliverDropBox> {
                             color: Colors.white, fontWeight: FontWeight.bold),
                       ),
                       onPressed: () async {
-                        await generateCsv(pedido, pedido.cliente)
+                        generateCsv(pedido, pedido.cliente)
                             .then((path) => sendMessage(path));
                         //var path = await generateCsv(pedido);
                         //await sendMessage(path);
                         //var map = await DatabaseService().getInfoContable();
-                        await DatabaseService().setPedido(pedido).then((_) {
+                        /*
+                        DatabaseService().setPedido(pedido).then((_) {
                           showDialog<void>(
                             context: context,
                             barrierDismissible: false, // user must tap button!
@@ -399,6 +400,7 @@ class _PedidosSliverDropBoxState extends State<PedidosSliverDropBox> {
                             },
                           );
                         });
+                        */
                       }),
                   RaisedButton(
                       child: Text(
@@ -533,7 +535,7 @@ class _PedidosSliverDropBoxState extends State<PedidosSliverDropBox> {
         cliente.nit,
         prod.nombre,
         0.025 * 100,
-        0.025 * prod.disp * prod.precio,
+        (0.025 * prod.disp * prod.precio).toStringAsFixed(2).replaceAll('.', ','), //it works
         prod.disp * prod.precio * 0.19,
         prod.linea,
         prod.grupo,
@@ -598,7 +600,7 @@ class _PedidosSliverDropBoxState extends State<PedidosSliverDropBox> {
             prod[18],
           ]),
     ];
-    String csv = const ListToCsvConverter().convert(csvData);
+    String csv = const ListToCsvConverter(fieldDelimiter: ';').convert(csvData);
     final String dir = (await getApplicationDocumentsDirectory()).path;
 
     final String path = '$dir/ordenProduccion.csv';
