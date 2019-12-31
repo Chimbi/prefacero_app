@@ -7,12 +7,9 @@ import 'package:flutter/material.dart';
 import 'package:mailer/mailer.dart';
 import 'package:mailer/smtp_server/gmail.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:prefacero_app/bloc/Provider.dart';
-import 'package:prefacero_app/model/order.dart';
 import 'package:prefacero_app/model/produccion.dart';
 import 'package:prefacero_app/model/producto.dart';
 import 'package:prefacero_app/model/regContable.dart';
-import 'package:prefacero_app/theme/style.dart';
 import 'package:prefacero_app/utils/db.dart';
 import 'package:provider/provider.dart';
 import 'package:autocomplete_textfield/autocomplete_textfield.dart';
@@ -21,15 +18,15 @@ import 'package:intl/intl.dart';
 // Adapted from offical flutter gallery:
 // https://github.com/flutter/flutter/blob/master/examples/flutter_gallery/lib/demo/material/bottom_app_bar_demo.dart
 
-class ProduccionSliverDropBox extends StatefulWidget {
-  const ProduccionSliverDropBox({Key key}) : super(key: key);
+class InventarioSliverDropBox extends StatefulWidget {
+  const InventarioSliverDropBox({Key key}) : super(key: key);
 
   @override
-  State<StatefulWidget> createState() => _ProduccionSliverDropBoxState();
+  State<StatefulWidget> createState() => _InventarioSliverDropBoxState();
 }
 
 
-class _ProduccionSliverDropBoxState extends State<ProduccionSliverDropBox> {
+class _InventarioSliverDropBoxState extends State<InventarioSliverDropBox> {
   List<String> prodName = ["Perfil H", "Perfil T"];
   List<List<Producto>> productos = [
     [
@@ -84,8 +81,6 @@ class _ProduccionSliverDropBoxState extends State<ProduccionSliverDropBox> {
   List<Produccion> produccionList = List();
 
   List<Producto> productList = List();
-
-  List<Producto> adicProductList = List();
 
 
   ///Cantidad Text Field
@@ -158,44 +153,34 @@ class _ProduccionSliverDropBoxState extends State<ProduccionSliverDropBox> {
           //Seleccion de Cantidad, busqueda de info produccion y llenado listaProduccion
           Expanded(
               child: TextField(
-            controller: cantidadController,
-            decoration: InputDecoration(labelText: 'Cantidad'),
-            enabled: true,
-            onSubmitted: (value) async {
-              selProd = await DatabaseService().getProduccion("$tipoPerfilValue-${moduloController.text}", int.parse(cantidadController.text));
-              var producto = Producto(nombre: selProd.nombre, disp: selProd.cantidad);
-              var listContProd = await DatabaseService().getInfoContable(producto);
-              producto.infoContable = listContProd;
-              print("Prueba ${producto.infoContable.toString()}");
-              if(selProd.cantAdicional != 0) {
-                var productoAdic = Producto(nombre: selProd.prodAdicional, disp: selProd.cantAdicional * selProd.laminas);
-                var listContProdAdic = await DatabaseService().getInfoContable(productoAdic);
-                productoAdic.infoContable = listContProdAdic;
-                setState(() {
-                  adicProductList.add(productoAdic);
-                });
-              }
-              setState(() {
-                productList.add(producto);
-                selProd != null ? produccionList.add(selProd) : print("Selprod null");
-                moduloController.text = "";
-                cantidadController.text = "";
-              });
-            },
-            onChanged: (val) {
-              setState(() {
-                //polizaObj.excecutionTime = int.parse(val);
-                //polizaObj.notifyListeners();
-              });
-            },
-          )),
+                controller: cantidadController,
+                decoration: InputDecoration(labelText: 'Cantidad'),
+                enabled: true,
+                onSubmitted: (value) async {
+                  var producto = Producto(nombre: "$tipoPerfilValue-${moduloController.text}", disp: int.parse(cantidadController.text));
+                  var listContProd = await DatabaseService().getInfoContable(producto);
+                  producto.infoContable = listContProd;
+                  print("Prueba ${producto.infoContable.toString()}");
+                  setState(() {
+                    productList.add(producto);
+                    moduloController.text = "";
+                    cantidadController.text = "";
+                  });
+                },
+                onChanged: (val) {
+                  setState(() {
+                    //polizaObj.excecutionTime = int.parse(val);
+                    //polizaObj.notifyListeners();
+                  });
+                },
+              )),
+
         ]);
   }
 
   @override
   Widget build(BuildContext context) {
     var user = Provider.of<FirebaseUser>(context);
-    var bloc = NewProvider.of(context);
     List<List<RegContable>> listaCon = List();
     String path;
 
@@ -251,7 +236,7 @@ class _ProduccionSliverDropBoxState extends State<ProduccionSliverDropBox> {
                     ],
                   ),
                   (tipoProductoValue == "Perfiles Cal26" ||
-                          tipoProductoValue == "Perfiles Cal24")
+                      tipoProductoValue == "Perfiles Cal24")
                       ? PerfilesWidget(tipoPerfil, modulos)
                       : Container(),
                 ],
@@ -278,46 +263,6 @@ class _ProduccionSliverDropBoxState extends State<ProduccionSliverDropBox> {
             padding: const EdgeInsets.all(8.0),
             sliver: SliverList(
               delegate: SliverChildBuilderDelegate(
-                (context, index) {
-                  return Table(
-                      defaultVerticalAlignment:
-                          TableCellVerticalAlignment.middle,
-                      border: TableBorder.all(
-                          color: Theme.of(context).hintColor, width: 0.3),
-                      children: [
-                        _buildTitle(context, productList[index])
-                      ]);
-                },
-                childCount: productList.length,
-              ),
-            ),
-          ),
-          ///Titulos tabla
-          adicProductList.length > 0 ? SliverPadding(
-            padding: const EdgeInsets.only(left: 20.0),
-            sliver: SliverToBoxAdapter(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  Text("Productos adicionales"),
-                  Table(children: [
-                    TableRow(children: [
-                      Text("Cantidad",
-                          style: TextStyle(fontWeight: FontWeight.bold)),
-                      Text("Producto",
-                          style: TextStyle(fontWeight: FontWeight.bold)),
-                      Text(""),
-                    ]),
-                  ]),
-                ],
-              ),
-            ),
-          ) : SliverToBoxAdapter(),
-          ///Muestra productos seleccionados en forma de Tabla
-          SliverPadding(
-            padding: const EdgeInsets.all(8.0),
-            sliver: SliverList(
-              delegate: SliverChildBuilderDelegate(
                     (context, index) {
                   return Table(
                       defaultVerticalAlignment:
@@ -325,10 +270,10 @@ class _ProduccionSliverDropBoxState extends State<ProduccionSliverDropBox> {
                       border: TableBorder.all(
                           color: Theme.of(context).hintColor, width: 0.3),
                       children: [
-                        _buildTitle(context, adicProductList[index])
+                        _buildTitle(context, productList[index])
                       ]);
                 },
-                childCount: adicProductList.length,
+                childCount: productList.length,
               ),
             ),
           ),
@@ -350,10 +295,7 @@ class _ProduccionSliverDropBoxState extends State<ProduccionSliverDropBox> {
                         //await sendMessage(path);
                         //var map = await DatabaseService().getInfoContable();
 
-                        DatabaseService().setOrdenProduccion(produccionList, user.uid, bloc).then((orden) async {
-                          //Crear c798Bv  sv
-                          generateCsvProductos(List.from(productList)..addAll(adicProductList));
-                          //Enviar correo
+                        generateCsvProductos(productList).then((orden) async {
                           showDialog<void>(
                             context: context,
                             barrierDismissible: false, // user must tap button!
@@ -365,7 +307,7 @@ class _ProduccionSliverDropBoxState extends State<ProduccionSliverDropBox> {
                                     children: <Widget>[
                                       Text(
                                           'El pedido Ref: REF PEDIDO fue enviado con exito '
-                                          'para consultar el estado del mismo ingrese al historial de pedidos'),
+                                              'para consultar el estado del mismo ingrese al historial de pedidos'),
                                     ],
                                   ),
                                 ),
@@ -382,36 +324,6 @@ class _ProduccionSliverDropBoxState extends State<ProduccionSliverDropBox> {
                           );
                         });
                       }),
-                  RaisedButton(
-                      child: Text(
-                        "Create CSV",
-                        style: TextStyle(
-                            color: Colors.white, fontWeight: FontWeight.bold),
-                      ),
-                      onPressed: () async {
-                        print("Pressed");
-                        generateCsvProductos(List.from(productList)..addAll(adicProductList));
-                        //
-                        //ordenProd.listProduccion = produccionList;
-                        //var map = await DatabaseService().getInfoContable();
-                        //getInfoContProduccion(produccionList);
-                      }),
-                  RaisedButton(
-                      child: Text(
-                        "Imprimir Path",
-                        style: TextStyle(
-                            color: Colors.white, fontWeight: FontWeight.bold),
-                      ),
-                      onPressed: () async {
-                        print("Path $path");
-                      }),
-                  /*
-                        listaCon = await DatabaseService().getInfoContPedido(pedido);
-                        listaCon.forEach((reg){
-                          print("Codigo ${reg.cantBase}");
-                        });
-                      })
-                      */
                 ],
               ),
             ),
@@ -429,21 +341,11 @@ class _ProduccionSliverDropBoxState extends State<ProduccionSliverDropBox> {
           icon: Icon(Icons.delete),
           onPressed: () {
             setState(() {
-              produccionList.removeAt(productList.indexOf(prod));
+              productList.removeAt(productList.indexOf(prod));
             });
           })
     ]
-        );
-  }
-
-  void _removeOne(Producto entry, int index, int prodIndex) {
-    setState(() {
-      if (entry.disp > 0) {
-        //pedidoUid.child(entry.key).update({"disp": entry.disp - 1}); //update disp
-
-        productos[index][prodIndex].disp = entry.disp - 1;
-      }
-    });
+    );
   }
 
 

@@ -1,4 +1,5 @@
 
+import 'package:prefacero_app/bloc/corteBloc.dart';
 import 'package:prefacero_app/model/order.dart';
 import 'package:prefacero_app/model/produccion.dart';
 import 'package:prefacero_app/model/regContable.dart';
@@ -53,24 +54,63 @@ class DatabaseService {
     return pedidoRef;
   }
 
-  Future<DocumentReference> setOrdenProduccion(List<Produccion> listProduccion) async {
+  void setAvanceProduccion(OrdenProduccion orden, String Proceso, String prod, int cantidad) async {
+    DocumentReference ordenRef = Firestore.instance.collection('ordenProduccion').document('${orden.key}');
+    DocumentSnapshot doc = await ordenRef.get();
+    int cantPrevia = doc.data['ordenProduccion']['$prod']['terminada$Proceso'];
+    int nuevaCantidad = cantPrevia + cantidad;
+    print("Cantidad previa: $cantPrevia");
+    if(cantPrevia != null){
+      ordenRef.setData({
+        "ordenProduccion": {prod : {
+          "terminada$Proceso": nuevaCantidad
+        }}
+      }, merge: true);
+    } else {
+      print("Algo esta mal");
+    }
+  }
+
+
+  Future<OrdenProduccion> setOrdenProduccion(List<Produccion> listProduccion, String uid, CorteBloc bloc) async {
     OrdenProduccion ordenProduccion = OrdenProduccion();
     Map<String, dynamic> map = {};
     DocumentReference ordenRef = Firestore.instance.collection('ordenProduccion').document();
     ordenProduccion.key = ordenRef.documentID;
+    ordenProduccion.uid = uid;
     ordenProduccion.fechaSolicitud = DateTime.now();
+    //TODO evaluar si es en rollo o en fleje
+    var listaDetalleProd = listProduccion.map((prod){
+      return DetalleProdPerfil.fromProduccion(prod, 100, true);
+    }).toList();
+    ordenProduccion.listProdPerfiles = listaDetalleProd;
+    //bloc.ordenes.stream.add(ordenProduccion);
+    //ordenProduccion.listProducto = listProduccion;
     ordenRef.setData(ordenProduccion.toMap());
-    listProduccion.forEach((prod){
+    listaDetalleProd.forEach((prod){
       ordenRef.setData({
         "ordenProduccion": {prod.nombre : prod.toMap()}
-      },merge: true);
+      },merge: true).then((_){
+        bloc.newOrden.add(ordenProduccion);
+      });
       print("Producto en Orden: ${prod.toMap()}");
       map.addAll(prod.toMap());
     });
     print("Map: $map");
-    return ordenRef;
+    return ordenProduccion;
   }
 
+  Future<Null> setOrden (OrdenProduccion orden, String prod, int index){
+    DocumentReference pedidoRef = Firestore.instance.collection('ordenProduccion').document(orden.key);
+    pedidoRef.setData({
+      "ordenProduccion": {prod : orden.listProdPerfiles[index].toMap()}
+    },merge: true);
+  }
+
+  Future<Null> setRollo (DetalleRollo rollo) async {
+    DocumentReference rolloRef = Firestore.instance.collection('controlRollo').document('${rollo.remesa}');
+    await rolloRef.setData(rollo.toMap(),merge: true);
+  }
 
   Future<DocumentReference> setPedido(Order pedido) async {
     //Generate the document id for pedido
@@ -105,6 +145,36 @@ class DatabaseService {
     return Future.wait(listaPedidos);
   }
 
+//TODO Aca esta el problema CUAL???
+  Future<Map<String, OrdenProduccion>> getListaOrdenes() async{
+    List<DetalleProdPerfil> listProd;
+    Map<String,dynamic> mapListaProd;
+    Map<String, OrdenProduccion> mapOrdenProd = Map<String,OrdenProduccion>();
+    //Get query con ordenes de producccion
+    QuerySnapshot query =  await _db.collection('ordenProduccion').getDocuments(); //.where('terminada',isEqualTo: 'False')
+    print("Query length ${query.documents.length}");
+
+    //Para cada orden agregar su lista de detalle de produccion
+    query.documents.forEach((doc){
+      listProd = List();
+      //Crea la orden a partir del mapa
+      OrdenProduccion orden = OrdenProduccion.fromMap(doc.data);
+      mapListaProd = doc['ordenProduccion'].cast<String,dynamic>();
+      mapListaProd.forEach((d,v){
+        listProd.add(DetalleProdPerfil.fromMap(v.cast<String,dynamic>()));
+      });
+      orden.listProdPerfiles = listProd;
+      /*
+      listProd = doc['ordenProduccion'].map((prod){
+        return DetalleProdPerfil.fromMap(prod.cast<Map<String,dynamic>());
+      }).toList();
+      orden.listProdPerfiles = listProd;
+      */
+      mapOrdenProd.putIfAbsent(orden.key, () => orden);
+    });
+    return mapOrdenProd;
+  }
+
   Future<List<RegContable>> getInfoContable(Producto prod) async{
     print("getInfoContable ejecutada");
       QuerySnapshot snap =  await _db.collection('Producto/${prod.nombre}/Contabilidad/').getDocuments();
@@ -118,6 +188,21 @@ class DatabaseService {
         print("List Contable prod ${prod.nombre}: $listaCon");
         return listaCon;
       } print("No hay datos");
+  }
+
+  Future<List<RegContable>> getInfoContableByProduct(String prod, int cant) async{
+    print("getInfoContable ejecutada");
+    QuerySnapshot snap =  await _db.collection('Producto/$prod/Contabilidad/').getDocuments();
+    Map<String,dynamic> map;
+    List<RegContable> listaCon = List();
+    if(snap != null){
+      map = snap.documents.first.data["entry"].cast<String,dynamic>();
+      map.forEach((k,V){
+        listaCon.add(RegContable.fromMap(V.cast<String,dynamic>(),cant));
+      });
+      print("List Contable prod $prod: $listaCon");
+      return listaCon;
+    } print("No hay datos");
   }
 
   Future<List<DocumentSnapshot>> getPedidoUser(FirebaseUser user) async{
@@ -154,6 +239,12 @@ class DatabaseService {
   Future<Cliente> getCliente(String cliente) async {
     DocumentSnapshot doc = await _db.collection('users').document(cliente).get();
     return Cliente.fromMap(doc.data);
+  }
+
+
+  String createOrdenProduccion(Produccion selProd) {
+    DocumentReference ordenRef = Firestore.instance.collection('ordenProduccion').document();
+    return ordenRef.documentID;
   }
 
 /*

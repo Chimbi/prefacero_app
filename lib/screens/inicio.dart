@@ -2,7 +2,6 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:prefacero_app/model/order.dart';
 import 'package:prefacero_app/theme/style.dart';
-import 'package:prefacero_app/utils/db.dart';
 import 'package:provider/provider.dart';
 
 class MenuRoute {
@@ -19,7 +18,10 @@ class MenuRoute {
 
 final List<MenuRoute> menu = <MenuRoute>[
   MenuRoute("Nuevo Pedido", '/pedido', Icon(Icons.add, size: 60.0, color: backgroundCol)),
+  MenuRoute("Ingreso Rollo", '/rollo', Icon(Icons.person_outline, size: 60.0, color: backgroundCol)),
   MenuRoute("Orden Produccion", '/orden', Icon(Icons.build , size: 60.0, color: backgroundCol)),
+  MenuRoute("Inventario", '/inventario', Icon(Icons.build , size: 60.0, color: backgroundCol)),
+  MenuRoute("Corte", '/corte', Icon(Icons.content_cut , size: 60.0, color: backgroundCol)),
   MenuRoute("Terceros", '/terceros', Icon(Icons.person_add, size: 60.0, color: backgroundCol)),
   MenuRoute("Historico", '/pedidos', Icon(Icons.history, size: 60.0, color: backgroundCol)),
   MenuRoute("Load Info", '/loadJson', Icon(Icons.cloud_upload, size: 60.0, color: backgroundCol)),

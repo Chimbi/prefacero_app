@@ -17,7 +17,7 @@
         android:name="io.flutter.app.FlutterApplication"
         android:label="prefacero_app"
         android:icon="@mipmap/ic_launcher">
-        android:name="io.flutter.app.FlutterApplication"
+        android:name=".App"
         tools:replace="android:appComponentFactory"
         <activity
             android:name=".MainActivity"

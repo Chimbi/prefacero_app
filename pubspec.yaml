@@ -10,7 +10,7 @@ description: Una aplicacion para comprar mas facil en Prefacero Ltda
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.0.0-dev.68.0 <3.0.0"
+  sdk: ">=2.6.0 <3.0.0"
 
 dependencies:
   flutter:
@@ -32,7 +32,8 @@ dependencies:
   intl: ^0.16.0
   csv: ^4.0.3
   mailer: ^3.0.4
-
+  rxdart: ^0.23.1
+  datetime_picker_formfield: ^1.0.0
 
 dev_dependencies:
   flutter_test:

@@ -1,15 +1,16 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:prefacero_app/bloc/Provider.dart';
 import 'package:prefacero_app/model/order.dart';
 import 'package:prefacero_app/pruebas/csvTest.dart';
-import 'package:prefacero_app/screens/home.dart';
+import 'package:prefacero_app/screens/areaCorte.dart';
+import 'package:prefacero_app/screens/ingresoRollo.dart';
 import 'package:prefacero_app/screens/inicio.dart';
+import 'package:prefacero_app/screens/inventarioSliverDropbox.dart';
 import 'package:prefacero_app/screens/loadJson.dart';
 import 'package:prefacero_app/screens/login.dart';
 import 'package:prefacero_app/screens/ordenProduccionSliverDropbox.dart';
 import 'package:prefacero_app/screens/pedidos.dart';
-import 'package:prefacero_app/screens/pedidosOld.dart';
-import 'package:prefacero_app/screens/pedidosSliver.dart';
 import 'package:prefacero_app/screens/pedidosSliverDropbox.dart';
 import 'package:prefacero_app/screens/profile.dart';
 import 'package:prefacero_app/theme/style.dart';
@@ -29,24 +30,28 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider<Order>(builder: (context) => Order(listaProd: List(), valorTotal: 0)), //polizaNumber: 784000000192,)
         StreamProvider<FirebaseUser>.value(value: AuthService().user),
       ],
-      child: MaterialApp(
-        theme: appTheme(),
-          routes: {
-            // When navigating to the "/" route, build the FirstScreen widget.
-            '/': (context) => LoginPage(),
-            //'/login': (context) => LoginPage(),
-            // When navigating to the "/second" route, build the SecondScreen widget.
-            '/inicio': (context) => PaginaInicio(),
-            '/pedido': (context) => PedidosSliverDropBox(),//OrderManagement(),
-            '/orden': (context) => ProduccionSliverDropBox(),
-            //'/terceros': (context) => AuxiliarPage(),
-            '/pedidos': (context) => PedidosPage(),
-            '/loadJson': (context) => LoadJson(),
-            '/csv': (context) => csvPage(),
-            '/profile' : (context) => ProfilePage(),
-            //'/control' : (context) => ControlPage(),
-            //'/batch' : (context) => BatchPage(),
-          }
+      child: NewProvider(
+        child: MaterialApp(
+          theme: appTheme(),
+            routes: {
+              // When navigating to the "/" route, build the FirstScreen widget.
+              '/': (context) => LoginPage(),
+              //'/login': (context) => LoginPage(),
+              // When navigating to the "/second" route, build the SecondScreen widget.
+              '/inicio': (context) => PaginaInicio(),
+              '/pedido': (context) => PedidosSliverDropBox(),//OrderManagement(),
+              '/orden': (context) => ProduccionSliverDropBox(),
+              '/corte': (context) => AreaCorte(),
+              '/inventario': (context) => InventarioSliverDropBox(),
+              '/pedidos': (context) => PedidosPage(),
+              '/loadJson': (context) => LoadJson(),
+              '/csv': (context) => csvPage(),
+              '/profile' : (context) => ProfilePage(),
+              '/rollo' : (context) => IngresoRollo(),
+              //'/control' : (context) => ControlPage(),
+              //'/batch' : (context) => BatchPage(),
+            }
+        ),
       ),
     );
   }
