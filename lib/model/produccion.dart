@@ -1,4 +1,5 @@
 
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:prefacero_app/model/order.dart';
 import 'package:prefacero_app/model/producto.dart';
 import 'package:prefacero_app/model/regContable.dart';
@@ -48,11 +49,11 @@ class DetalleRollo {
 
   factory DetalleRollo.fromMap(Map<String, dynamic> map) => DetalleRollo(
     remesa: map['remesa'],
-    fecha: map['fecha'].toDate(),
+    fecha: (map['fecha'] as Timestamp).toDate(),
     producto: map['producto'],
-    kilos: map['kilos'].toDouble(),
-    disponible: map['disponible'].toDouble(),
-    gastado: map ['gastado'].toDouble(),
+    kilos: map['kilos'],//.toDouble(),
+    disponible: map['disponible'],//.toDouble(),
+    gastado: map['gastado'].toDouble(),
     terminado: map['terminado'],
   );
 

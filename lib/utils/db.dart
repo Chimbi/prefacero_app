@@ -144,6 +144,18 @@ class DatabaseService {
     print("Lista pedidos ${listaPedidos.toString()}");
     return Future.wait(listaPedidos);
   }
+  
+  Future<List<DetalleRollo>> getListaRollos() async {
+    QuerySnapshot query = await _db.collection('controlRollo').getDocuments();
+    var listaRollos = query.documents.map((doc){
+      var rollo = DetalleRollo.fromMap(doc.data);
+      print("Doc en rollo ${doc.data}");
+      return rollo;
+    }).toList();
+    print("Lista Rollos ${listaRollos.first.fecha}");
+    return listaRollos;
+  }
+  
 
 //TODO Aca esta el problema CUAL???
   Future<Map<String, OrdenProduccion>> getListaOrdenes() async{
