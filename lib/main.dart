@@ -13,6 +13,7 @@ import 'package:prefacero_app/screens/ordenProduccionSliverDropbox.dart';
 import 'package:prefacero_app/screens/pedidos.dart';
 import 'package:prefacero_app/screens/pedidosSliverDropbox.dart';
 import 'package:prefacero_app/screens/profile.dart';
+import 'package:prefacero_app/screens/selectRollo.dart';
 import 'package:prefacero_app/theme/style.dart';
 import 'package:prefacero_app/utils/auth.dart';
 import 'package:provider/provider.dart';
@@ -40,7 +41,7 @@ class MyApp extends StatelessWidget {
               // When navigating to the "/second" route, build the SecondScreen widget.
               '/inicio': (context) => PaginaInicio(),
               '/pedido': (context) => PedidosSliverDropBox(),//OrderManagement(),
-              '/orden': (context) => ProduccionSliverDropBox(),
+              '/orden': (context) => SelectRollo(),
               '/corte': (context) => AreaCorte(),
               '/inventario': (context) => InventarioSliverDropBox(),
               '/pedidos': (context) => PedidosPage(),
