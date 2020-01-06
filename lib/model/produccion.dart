@@ -38,19 +38,23 @@ class DetalleRollo {
   String remesa;
   DateTime fecha;
   String producto;
+  String tipoRollo;
+  double espesor;
   double kilos;
   double disponible;
   double gastado;
   int terminado;
   List<ConsumoRollo> consumo;
 
-  DetalleRollo({this.remesa, this.fecha, this.producto, this.kilos,
+  DetalleRollo({this.remesa, this.fecha, this.producto, this.tipoRollo, this.espesor, this.kilos,
       this.disponible, this.gastado, this.terminado});
 
   factory DetalleRollo.fromMap(Map<String, dynamic> map) => DetalleRollo(
     remesa: map['remesa'],
     fecha: (map['fecha'] as Timestamp).toDate(),
     producto: map['producto'],
+    tipoRollo: map['tipoRollo'],
+    espesor: map['espesor'],
     kilos: map['kilos'],//.toDouble(),
     disponible: map['disponible'],//.toDouble(),
     gastado: map['gastado'].toDouble(),
@@ -61,14 +65,13 @@ class DetalleRollo {
     "remesa": remesa,
     "fecha": fecha,
     "producto": producto,
+    "tipoRollo": tipoRollo,
+    "espesor" : espesor,
     "kilos": kilos,
     "disponible": kilos,
     "gastado": 0,
     "terminado": 0
   };
-
-
-
 
 }
 
@@ -108,18 +111,24 @@ class OrdenProduccion {
   String key; //Key de la orden
   DateTime fechaSolicitud;
   String uid; //uid de la persona que crea la solicitud
+  String remesaRollo;
+  double consumoOrden;
+  int numero;
   List<DetalleProdPerfil> listProdPerfiles;
 
-  OrdenProduccion({this.key, this.fechaSolicitud, this.uid, this.listProdPerfiles});
+  OrdenProduccion({this.key, this.fechaSolicitud, this.uid, this.remesaRollo, this.consumoOrden, this.numero, this.listProdPerfiles});
 
   factory OrdenProduccion.fromMap(Map<String, dynamic> map) => OrdenProduccion(
     key: map['key'],
+    numero: map['numero'],
+    remesaRollo: map['remesaRollo'],
+    consumoOrden: map['consumoOrden'],
     fechaSolicitud: map['fechaSolicitud'].toDate()
   );
 
   Map<String, dynamic> toMap() =>
       {
-        "key": key, "uid": uid, "fechaSolicitud": fechaSolicitud,
+        "key": key, "numero": numero, "uid": uid, "remesaRollo": remesaRollo, "consumoOrden": consumoOrden, "fechaSolicitud": fechaSolicitud,
       };
 
 }
@@ -157,15 +166,15 @@ class DetalleProdPerfil {
     terminadaDespunte: map['terminadaDespunte']
   );
 
-  factory DetalleProdPerfil.fromProduccion(Produccion prod, int anchoLam, bool rollo) => DetalleProdPerfil(
+  factory DetalleProdPerfil.fromProduccion(Produccion prod, int anchoLam, String rollo) => DetalleProdPerfil(
     nombre: prod.nombre,
     textoCorte: "${prod.laminas} lamina${prod.laminas > 1 ? "s" : ""} de ${prod.longLamina} (${prod.cantidad} ${prod.nombre})",
     cantCorte: prod.laminas,
     terminadaCorte: 0,
-    textoDespunte: rollo == true ? "${prod.laminas} laminas en ${prod.cantLam} tiras de ${prod.des}cm = ${prod.laminas*prod.cantLam} tiras de ${prod.nombre}" : "",
-    textoDespunte2: rollo == true ? "${prod.cantAdicional != 0 ? "Por cada lamina sale ${prod.cantAdicional} tira de ${(anchoLam - prod.des*prod.cantLam).toStringAsFixed(2)} cm = ${prod.cantAdicional*prod.laminas} tiras de ${prod.prodAdicional}" :""}": "",
+    textoDespunte: rollo == "Rollo" ? "${prod.laminas} laminas en ${prod.cantLam} tiras de ${prod.des}cm = ${prod.laminas*prod.cantLam} tiras de ${prod.nombre}" : "",
+    textoDespunte2: rollo == "Rollo" ? "${prod.cantAdicional != 0 ? "Por cada lamina sale ${prod.cantAdicional} tira de ${(anchoLam - prod.des*prod.cantLam).toStringAsFixed(2)} cm = ${prod.cantAdicional*prod.laminas} tiras de ${prod.prodAdicional}" :""}": "",
     terminadaDespunte: 0,
-    cantDespunte: rollo == true ? prod.laminas : 0,
+    cantDespunte: rollo == "Rollo" ? prod.laminas : 0,
   );
 
 }

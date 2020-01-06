@@ -5,6 +5,8 @@ import 'package:prefacero_app/model/produccion.dart';
 import 'package:prefacero_app/screens/cortePage.dart';
 import 'package:prefacero_app/utils/db.dart';
 
+///Pantalla que muestra la lista de ordenes de produccion
+///
 class AreaCorte extends StatefulWidget {
   @override
   _AreaCorteState createState() => _AreaCorteState();
@@ -15,11 +17,11 @@ class _AreaCorteState extends State<AreaCorte> {
   Widget _buildItem(BuildContext context, OrdenProduccion data){
     return Card(
       child: ListTile(
-        title: Text("${data.key}"),
+        title: Text("No. Orden: ${data.numero}"),
         onTap: () => Navigator.push<dynamic>(context, MaterialPageRoute<dynamic>(settings: RouteSettings(name: "/corteOrden"), builder: (BuildContext context) => CortePage(data.key)),
         ),
       ),
-    );
+     );
   }
 
 
@@ -28,7 +30,7 @@ class _AreaCorteState extends State<AreaCorte> {
     final bloc = NewProvider.of(context);
     return Scaffold(
       appBar: AppBar(
-        title: Text("Corte"),
+        title: Text("Area Corte"),
       ),
       body: StreamBuilder<Map<String,OrdenProduccion>>(
         initialData: Map<String,OrdenProduccion>(),

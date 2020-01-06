@@ -22,13 +22,16 @@ import 'package:intl/intl.dart';
 // https://github.com/flutter/flutter/blob/master/examples/flutter_gallery/lib/demo/material/bottom_app_bar_demo.dart
 
 class ProduccionSliverDropBox extends StatefulWidget {
-  const ProduccionSliverDropBox({Key key}) : super(key: key);
+  final DetalleRollo rollo;
+  final int consecutivo;
+  const ProduccionSliverDropBox({Key key, this.rollo, this.consecutivo}) : super(key: key);
 
   @override
   State<StatefulWidget> createState() => _ProduccionSliverDropBoxState();
 }
 
-
+///Clase para crear una orden de produccion. En la orden debe quedar registrado el rollo seleccionado
+///identificado por la remesa, la cantidad disponible después de la orden y el consumo de la orden.
 class _ProduccionSliverDropBoxState extends State<ProduccionSliverDropBox> {
   List<String> prodName = ["Perfil H", "Perfil T"];
   List<List<Producto>> productos = [
@@ -92,9 +95,13 @@ class _ProduccionSliverDropBoxState extends State<ProduccionSliverDropBox> {
   TextEditingController cantidadController = TextEditingController();
 
   Produccion selProd;
+  int consecutivo;
   OrdenProduccion ordenProd = OrdenProduccion(listProdPerfiles: List());
 
   NumberFormat moneyFormat;
+
+  double disponibleGlobal;
+
 
   @override
   void initState() {
@@ -102,6 +109,7 @@ class _ProduccionSliverDropBoxState extends State<ProduccionSliverDropBox> {
     modulos = ["18", "20", "22", "24", "26", "28", "30"];
     medidaVentana = ["08-08", "04-08", "06-08"];
     medidaPuerta = ["16-08", "16-06", "18-08", "18-06"];
+    disponibleGlobal = widget.rollo.disponible;
     super.initState();
   }
 
@@ -162,12 +170,19 @@ class _ProduccionSliverDropBoxState extends State<ProduccionSliverDropBox> {
             decoration: InputDecoration(labelText: 'Cantidad'),
             enabled: true,
             onSubmitted: (value) async {
-              selProd = await DatabaseService().getProduccion("$tipoPerfilValue-${moduloController.text}", int.parse(cantidadController.text));
+
+              //Busca la informacion de produccion del producto seleccionado
+              selProd = await DatabaseService().getProduccion("$tipoPerfilValue-${moduloController.text}", int.parse(cantidadController.text), widget.rollo.tipoRollo);
+
+              //Crea el objeto producto y le adjunta la informacion contable
               var producto = Producto(nombre: selProd.nombre, disp: selProd.cantidad);
               var listContProd = await DatabaseService().getInfoContable(producto);
               producto.infoContable = listContProd;
               print("Prueba ${producto.infoContable.toString()}");
-              if(selProd.cantAdicional != 0) {
+
+              //Si el producto genera producto adicional y es tipo rollo crea el producto y le adjunta la informacion contable
+              //Adiciona el producto a la lista de productos adicionales
+              if(selProd.cantAdicional != 0 && widget.rollo.tipoRollo == "Rollo") {
                 var productoAdic = Producto(nombre: selProd.prodAdicional, disp: selProd.cantAdicional * selProd.laminas);
                 var listContProdAdic = await DatabaseService().getInfoContable(productoAdic);
                 productoAdic.infoContable = listContProdAdic;
@@ -175,7 +190,23 @@ class _ProduccionSliverDropBoxState extends State<ProduccionSliverDropBox> {
                   adicProductList.add(productoAdic);
                 });
               }
+              var pesoLam;
+              if(widget.rollo.tipoRollo == "Rollo"){
+                pesoLam = selProd.laminas * selProd.kilosLamina;
+                print("Laminas ${selProd.laminas}");
+                print("Kilos por lamina ${selProd.kilosLamina}");
+                print("Peso: $pesoLam");
+                print("Desarollo: ${selProd.des}");
+              } else {
+                pesoLam = (7.85 * widget.rollo.espesor * selProd.longLamina)/selProd.cantLam * selProd.cantidad;
+                print("Peso: $pesoLam");
+                print("Desarollo: ${selProd.des}");
+              }
+
               setState(() {
+                //TODO Actualmente la informacion de produccion solo tiene los kilos por lamina en Rollo
+                disponibleGlobal = disponibleGlobal - pesoLam;
+                print("Disponible al agregar $disponibleGlobal");
                 productList.add(producto);
                 selProd != null ? produccionList.add(selProd) : print("Selprod null");
                 moduloController.text = "";
@@ -206,7 +237,7 @@ class _ProduccionSliverDropBoxState extends State<ProduccionSliverDropBox> {
         slivers: <Widget>[
           SliverAppBar(
             title: Text(
-              "Pedido Nuevo",
+              "Orden Producción No: ${widget.consecutivo}",
               style: TextStyle(color: Colors.white),
             ),
             iconTheme: new IconThemeData(color: Colors.white),
@@ -216,46 +247,24 @@ class _ProduccionSliverDropBoxState extends State<ProduccionSliverDropBox> {
             pinned: true,
             expandedHeight: 120.0,
           ),
+          SliverPadding(
+            padding: const EdgeInsets.all(10),
+            sliver: SliverToBoxAdapter(
+              child: Column(
+                children: <Widget>[
+                  Text("${widget.rollo.producto}"),
+                  SizedBox(height: 2,),
+                  Text("Remesa: ${widget.rollo.remesa}"),
+                  Text("Disponible: ${disponibleGlobal.toStringAsFixed(2)} Kg"),
+                ],
+              ),
+            ),
+          ),
           ///Seleccion productos y campos
           SliverPadding(
             padding: const EdgeInsets.only(bottom: 12.0),
             sliver: SliverToBoxAdapter(
-              child: Column(
-                children: <Widget>[
-                  ///Seleccion tipo de producto
-                  Row(
-                    children: <Widget>[
-                      Text(
-                        "Tipo de producto:",
-                        style: TextStyle(fontWeight: FontWeight.bold),
-                      ),
-                      SizedBox(
-                        width: 10,
-                      ),
-                      DropdownButton<String>(
-                        hint: Text("Tipo Perfil"),
-                        value: tipoProductoValue,
-                        onChanged: (newValue) {
-                          setState(() {
-                            tipoProductoValue = newValue;
-                          });
-                          print("Tipo producto value $tipoProductoValue");
-                        },
-                        items: tipoProducto.map((value) {
-                          return DropdownMenuItem<String>(
-                            value: value,
-                            child: Text(value),
-                          );
-                        }).toList(),
-                      ),
-                    ],
-                  ),
-                  (tipoProductoValue == "Perfiles Cal26" ||
-                          tipoProductoValue == "Perfiles Cal24")
-                      ? PerfilesWidget(tipoPerfil, modulos)
-                      : Container(),
-                ],
-              ),
+              child: PerfilesWidget(tipoPerfil, modulos),
             ),
           ),
           ///Titulos tabla
@@ -285,7 +294,7 @@ class _ProduccionSliverDropBoxState extends State<ProduccionSliverDropBox> {
                       border: TableBorder.all(
                           color: Theme.of(context).hintColor, width: 0.3),
                       children: [
-                        _buildTitle(context, productList[index])
+                        _buildTitle(context, productList[index], widget.rollo.tipoRollo)
                       ]);
                 },
                 childCount: productList.length,
@@ -325,7 +334,7 @@ class _ProduccionSliverDropBoxState extends State<ProduccionSliverDropBox> {
                       border: TableBorder.all(
                           color: Theme.of(context).hintColor, width: 0.3),
                       children: [
-                        _buildTitle(context, adicProductList[index])
+                        _buildTitle(context, adicProductList[index], widget.rollo.tipoRollo)
                       ]);
                 },
                 childCount: adicProductList.length,
@@ -345,27 +354,18 @@ class _ProduccionSliverDropBoxState extends State<ProduccionSliverDropBox> {
                             color: Colors.white, fontWeight: FontWeight.bold),
                       ),
                       onPressed: () async {
-                        //getInfoContPedido(pedido)?.then((int) async {if(int==1){sendMessage(await generateCsv(pedido));}});
-                        //var path = await generateCsv(pedido);
-                        //await sendMessage(path);
-                        //var map = await DatabaseService().getInfoContable();
-
-                        DatabaseService().setOrdenProduccion(produccionList, user.uid, bloc).then((orden) async {
-                          //Crear c798Bv  sv
-                          generateCsvProductos(List.from(productList)..addAll(adicProductList));
-                          //Enviar correo
+                        if(disponibleGlobal<0){
                           showDialog<void>(
                             context: context,
                             barrierDismissible: false, // user must tap button!
                             builder: (BuildContext context) {
                               return AlertDialog(
-                                title: Text('Pedido enviado'),
+                                title: Text('Error en el peso'),
                                 content: SingleChildScrollView(
                                   child: ListBody(
                                     children: <Widget>[
                                       Text(
-                                          'El pedido Ref: REF PEDIDO fue enviado con exito '
-                                          'para consultar el estado del mismo ingrese al historial de pedidos'),
+                                          'El consumo de kilos del rollo no puede superar la cantidad disponible'),
                                     ],
                                   ),
                                 ),
@@ -380,7 +380,42 @@ class _ProduccionSliverDropBoxState extends State<ProduccionSliverDropBox> {
                               );
                             },
                           );
-                        });
+                        }else{
+                          //El consumo del rollo es menor o igual que la cantidad disponible
+                          DatabaseService().setOrdenProduccion(produccionList, user.uid, bloc, widget.consecutivo, widget.rollo, widget.rollo.kilos-disponibleGlobal).then((orden) async {
+                            //Actualizar el consecutivo en la base de datos
+                            DatabaseService().setConsecutivoOrden(widget.consecutivo);
+                            //Crear csv
+                            generateCsvProductos(List.from(productList)..addAll(adicProductList),widget.consecutivo);
+                            //Dialogo informando que orden fue enviada con éxito
+                            showDialog<void>(
+                              context: context,
+                              barrierDismissible: false, // user must tap button!
+                              builder: (BuildContext context) {
+                                return AlertDialog(
+                                  title: Text('Orden de producción enviada'),
+                                  content: SingleChildScrollView(
+                                    child: ListBody(
+                                      children: <Widget>[
+                                        Text(
+                                            'La orden de producción ${widget.consecutivo} '
+                                                'fue enviada con éxito'),
+                                      ],
+                                    ),
+                                  ),
+                                  actions: <Widget>[
+                                    FlatButton(
+                                      child: Text('Aceptar'),
+                                      onPressed: () {
+                                        Navigator.of(context).popUntil(ModalRoute.withName('/inicio'));
+                                      },
+                                    ),
+                                  ],
+                                );
+                              },
+                            );
+                          });
+                        }
                       }),
                   RaisedButton(
                       child: Text(
@@ -390,7 +425,7 @@ class _ProduccionSliverDropBoxState extends State<ProduccionSliverDropBox> {
                       ),
                       onPressed: () async {
                         print("Pressed");
-                        generateCsvProductos(List.from(productList)..addAll(adicProductList));
+                        generateCsvProductos(List.from(productList)..addAll(adicProductList), widget.consecutivo);
                         //
                         //ordenProd.listProduccion = produccionList;
                         //var map = await DatabaseService().getInfoContable();
@@ -421,15 +456,26 @@ class _ProduccionSliverDropBoxState extends State<ProduccionSliverDropBox> {
     );
   }
 
-  TableRow _buildTitle(BuildContext context, Producto prod) {
+  TableRow _buildTitle(BuildContext context, Producto prod, String tipoRollo) {
     return TableRow(children: [
       Center(child: Text("${prod.disp}")),
       Center(child: Text("${prod.nombre}")),
       IconButton(
           icon: Icon(Icons.delete),
           onPressed: () {
+            var pesoLam;
+            var index = productList.indexOf(prod);
+            if(tipoRollo == "Rollo"){
+              pesoLam = produccionList[index].kilosLamina * produccionList[index].laminas;
+            } else {
+              pesoLam = (7.85 * widget.rollo.espesor * produccionList[index].longLamina)/produccionList[index].cantLam * produccionList[index].cantidad;
+            }
             setState(() {
-              produccionList.removeAt(productList.indexOf(prod));
+              disponibleGlobal = disponibleGlobal + pesoLam;
+              print("Index $index");
+              print("Product list length: ${productList.length}");
+              productList.removeAt(index);
+              produccionList.removeAt(index);
             });
           })
     ]
@@ -456,7 +502,7 @@ class _ProduccionSliverDropBoxState extends State<ProduccionSliverDropBox> {
     });
     return Future.value(listaProd); listaProd;
   }
-  Future<void> generateCsvProductos(List<Producto> listProd) async{
+  Future<void> generateCsvProductos(List<Producto> listProd, int consecutivo) async{
     List<List<dynamic>> list = List();
     int i = 1;
     listProd.forEach((prod){
@@ -471,7 +517,7 @@ class _ProduccionSliverDropBoxState extends State<ProduccionSliverDropBox> {
     print("List ${list.toString()}");
     List<List<dynamic>> csvData = [
       <String>['TipoCompr', 'Codigo', 'NumCompr', 'Cuenta Cont','Naturaleza', 'Valor', 'Año', 'Mes', 'Dia', 'Secuencia', 'CCosto','SubCCosto',   'NIT',   'Descripcion','Linea','Grupo',  'Codigo', 'Cantidad', 'Bodega', 'TipoCruce', 'NumDocCruce', 'AñoVencCruce', 'MesVencCruce','DiaVencCruce','DescLarga', ],
-      ...list.map((prod) => ['O','31',    '1072',    prod[0],        prod[1],   prod[2],prod[3],prod[4],prod[5],prod[6],       3,       0,    860353552,  prod[7],       prod[8], prod[9], prod[10], prod[11],      3,     "","","","","",""]),
+      ...list.map((prod) => ['O','31',    consecutivo,    prod[0],        prod[1],   prod[2],prod[3],prod[4],prod[5],prod[6],       3,       0,    860353552,  prod[7],       prod[8], prod[9], prod[10], prod[11],      3,     "","","","","",""]),
     ];
     String csv = const ListToCsvConverter(fieldDelimiter: ';').convert(csvData);
     final String dir = (await getApplicationDocumentsDirectory()).path;

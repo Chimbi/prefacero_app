@@ -19,7 +19,7 @@ class CustomError extends Error {
 }
 
 class CorteBloc {
-  Map<String, OrdenProduccion> ordenList;
+  Map<String, OrdenProduccion> ordenMap;
 
   Stream<Map<String, OrdenProduccion>> get ordenes => _ordenesSubject.stream;
 
@@ -40,32 +40,33 @@ class CorteBloc {
 
   CorteBloc() {
     //Initialize ordenList
-    ordenList = Map<String,OrdenProduccion>();
+    ordenMap = Map<String,OrdenProduccion>();
 
     getOrdenes().then((_) {
-      print("OrdenList: ${ordenList.toString()}");
-      _ordenesSubject.add(ordenList);
+      print("OrdenList: ${ordenMap.toString()}");
+      _ordenesSubject.add(ordenMap);
     });
 
+    //Listen for the stream of changes in the form of a Map
     _ordenUpdateController.stream.listen((data) {
       evaluateChanges(data).then((_) {
-        _ordenesSubject.add(ordenList);
+        _ordenesSubject.add(ordenMap);
       }
       );
     });
 
     _newOrdenController.stream.listen((orden){
-      ordenList.putIfAbsent(orden.key, () => orden);
-      _ordenesSubject.add(ordenList);
+      ordenMap.putIfAbsent(orden.key, () => orden);
+      _ordenesSubject.add(ordenMap);
     });
 
   }
 
   Future<Map<String, OrdenProduccion>> getOrdenes() async {
     print("Ejecución get Ordenes");
-    ordenList = await DatabaseService().getListaOrdenes();
-    print("OrdenList ${ordenList.toString()}");
-    return ordenList;
+    ordenMap = await DatabaseService().getListaOrdenes();
+    print("OrdenList ${ordenMap.toString()}");
+    return ordenMap;
   }
 
   Future<void> evaluateChanges(Map<String, dynamic> data) async {
@@ -81,16 +82,13 @@ class CorteBloc {
     int cantOrden;
     int cantidadNueva;
 
-    var orden = ordenList[key];
+    var orden = ordenMap[key];
 
     //Obtiene cantidad en orden y valor anterior
     if (proceso == "Corte") {
       valorAntes = orden.listProdPerfiles[index].terminadaCorte;
-      print("ValorAntes $valorAntes");
       cantOrden = orden.listProdPerfiles[index].cantCorte;
-      print("Cantidad Orden: $cantOrden");
       cantidadNueva = valorAntes + cantidad;
-      print("Cantidad nueva: $cantidadNueva");
       if (cantidadNueva > cantOrden) {
         throw CustomError("La cantidad no puede ser superior a la orden");
       } else {
@@ -109,12 +107,12 @@ class CorteBloc {
         orden.listProdPerfiles[index].terminadaDespunte = cantidadNueva;
       }
     }
-    ordenList[key] = orden;
+    ordenMap[key] = orden;
     //ordenList.update(key, (orden) => orden);
-    print("Orden List term corte key: $key: ${ordenList[key].listProdPerfiles[index].terminadaCorte}");
+    print("Orden List term corte key: $key: ${ordenMap[key].listProdPerfiles[index].terminadaCorte}");
 
     print("Terminadas orden: ${orden.listProdPerfiles[index].terminadaCorte.toString()}");
-    _ordenesSubject.add(ordenList);
+    _ordenesSubject.add(ordenMap);
     //print("Terminada despunte: ${orden.listProdPerfiles[index].terminadaDespunte}");
     await DatabaseService().setOrden(orden, orden.listProdPerfiles[index].nombre , index);
   }

@@ -25,17 +25,24 @@ class SelectRollo extends StatelessWidget {
                     itemBuilder: (context, index){
                   return Card(
                     child: GestureDetector(
-                      onTap: () {
+                      onTap: () async {
                         //TODO actualizar ProduccionSliverDropBox para pasar el rollo seleccionado con el indice de la lista
                         //o pasar el rollo al Stream para actualizarlo
-                        Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => ProduccionSliverDropBox()));
+                        var consecutivoOrden = await DatabaseService().getConsecutivoOrden();
+                        Navigator.of(context).push(MaterialPageRoute(builder: (BuildContext context) => ProduccionSliverDropBox(rollo: snap.data[index], consecutivo: consecutivoOrden)));
                       },
                       child: ListTile(
-                        title: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        title: Column(
                           children: <Widget>[
-                            Text("Remesa: ${snap.data[index].remesa}"),
-                            Text("${snap.data[index].kilos} Kgs"),
+                            Text("${snap.data[index].producto}", style: TextStyle(fontWeight: FontWeight.bold),),
+                            SizedBox(height: 10,),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                              children: <Widget>[
+                                Text("Remesa: ${snap.data[index].remesa}"),
+                                Text("${snap.data[index].kilos} Kgs"),
+                              ],
+                            ),
                           ],
                         ),
                         subtitle: Center(child: Text("Disponible: ${snap.data[index].disponible}")),

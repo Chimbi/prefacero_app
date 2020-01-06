@@ -11,8 +11,10 @@ class IngresoRollo extends StatefulWidget {
 
 class _IngresoRolloState extends State<IngresoRollo> {
   String seleccionRollo;
+  String tipoRolloSelected;
   TextEditingController remesaController = TextEditingController();
   TextEditingController kilosController = TextEditingController();
+  TextEditingController espesorController = TextEditingController();
   final dateFormat = DateFormat("EEEE, MMMM d, yyyy 'at' h:mma");
   DateTime date;
   DetalleRollo rollo = DetalleRollo();
@@ -20,6 +22,12 @@ class _IngresoRolloState extends State<IngresoRollo> {
   List<String> listaRollos = [
     "Rollo 0.43-1000 Z90 Gr33 Galv",
     "Rollo 0.70-1000 Z180 Galv.",
+    "Rollo C.R. 0.70-1220"
+  ];
+
+  List<String> tipoRollo = [
+    "Rollo",
+    "Fleje"
   ];
 
   @override
@@ -58,6 +66,30 @@ class _IngresoRolloState extends State<IngresoRollo> {
                   child: Text(value),
                 );
               }).toList(),
+            ),
+            DropdownButtonFormField<String>(
+              decoration: InputDecoration(labelText: "Tipo Perfil"),
+              //hint: Text("Tipo Perfil"),
+              value: tipoRolloSelected,
+              onChanged: (newValue) {
+                setState(() {
+                  tipoRolloSelected = newValue;
+                  rollo.tipoRollo = newValue;
+                });
+                print("Tipo producto value $seleccionRollo");
+              },
+              items: tipoRollo.map((value) {
+                return DropdownMenuItem<String>(
+                  value: value,
+                  child: Text(value),
+                );
+              }).toList(),
+            ),
+            TextField(
+              controller: espesorController,
+              decoration: InputDecoration(labelText: 'Espesor mm'),
+              enabled: true,
+              onChanged: (value) =>  rollo.remesa = value,
             ),
             TextField(
               controller: remesaController,

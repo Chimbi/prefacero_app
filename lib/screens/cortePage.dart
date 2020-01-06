@@ -83,8 +83,7 @@ class _CortePageState extends State<CortePage> {
                                   SizedBox(width: 5),
                                   tipoProceso == "Corte"
                                       ? Text("Terminadas: ${prod.terminadaCorte}")
-                                      : Text(
-                                      "Terminadas: ${prod.terminadaDespunte}")
+                                      : Text("Terminadas: ${prod.terminadaDespunte}")
                                 ],
                               ),
                               subtitle: tipoProceso == "Corte"
@@ -270,10 +269,10 @@ class _ModalBottomSheetState extends State<ModalBottomSheet>
                                       var indice = widget.mapOrdenes[widget.clave].listProdPerfiles.indexOf(widget.detalleProd);
                                       var cantidadProceso = int.parse(cantidadController.text);
                                       Map<String, dynamic> map = {
-                                        "key": widget.clave,
-                                        "index": indice,
-                                        "proceso": widget.proceso,
-                                        "cantidad": cantidadProceso
+                                        "key": widget.clave,  //Identificador de la orden de produccion
+                                        "index": indice,      //Indice en la lista de productos
+                                        "proceso": widget.proceso,   //Tipo de proceso: corte o despunte
+                                        "cantidad": cantidadProceso  //Cantidad fabricada
                                       };
                                       cantidadController.text = "";
                                       widget.bloc.ordenUpdate.add(map);

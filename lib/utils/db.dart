@@ -26,12 +26,19 @@ class DatabaseService {
     return pedidoRef;
   }
 
-  Future<Produccion> getProduccion(String prod, cantidad) async{
+  Future<Produccion> getProduccion(String prod, int cantidad, String tipoRollo) async{
     Produccion infoProd;
     var snap = await _db.collection('Producto/$prod/Produccion').document('infoProduccion').get();
     infoProd = Produccion.fromMap(snap.data);
-    infoProd.laminas = (cantidad/infoProd.cantLam).ceil();
-    infoProd.cantidad =  infoProd.laminas * infoProd.cantLam;  //Cantidad de producto recalculado
+    //TODO Solo debe aumentar la cantidad de laminas cuando es rollo.
+    if (tipoRollo == "Rollo"){
+      //Aumenta la cantidad de laminas aproximando hacia arriba según la cantidad seleccionada de producto
+      infoProd.laminas = (cantidad/infoProd.cantLam).ceil();
+      infoProd.cantidad =  infoProd.laminas * infoProd.cantLam;  //Cantidad de producto recalculado
+    } else {
+      infoProd.laminas = cantidad;
+      infoProd.cantidad = cantidad;
+    }
     return infoProd;
   }
 
@@ -72,16 +79,19 @@ class DatabaseService {
   }
 
 
-  Future<OrdenProduccion> setOrdenProduccion(List<Produccion> listProduccion, String uid, CorteBloc bloc) async {
+  Future<OrdenProduccion> setOrdenProduccion(List<Produccion> listProduccion, String uid, CorteBloc bloc, int consecutivo, DetalleRollo rollo, double consumo) async {
     OrdenProduccion ordenProduccion = OrdenProduccion();
     Map<String, dynamic> map = {};
     DocumentReference ordenRef = Firestore.instance.collection('ordenProduccion').document();
     ordenProduccion.key = ordenRef.documentID;
     ordenProduccion.uid = uid;
     ordenProduccion.fechaSolicitud = DateTime.now();
+    ordenProduccion.numero = consecutivo;
+    ordenProduccion.remesaRollo = rollo.remesa;
+    ordenProduccion.consumoOrden = consumo;
     //TODO evaluar si es en rollo o en fleje
     var listaDetalleProd = listProduccion.map((prod){
-      return DetalleProdPerfil.fromProduccion(prod, 100, true);
+      return DetalleProdPerfil.fromProduccion(prod, 100, rollo.tipoRollo);
     }).toList();
     ordenProduccion.listProdPerfiles = listaDetalleProd;
     //bloc.ordenes.stream.add(ordenProduccion);
@@ -144,6 +154,21 @@ class DatabaseService {
     print("Lista pedidos ${listaPedidos.toString()}");
     return Future.wait(listaPedidos);
   }
+
+  ///La funcion getConsecutivoOrden devuelve el consecutivo
+  ///actual de la orden de producción
+  Future<int> getConsecutivoOrden() async {
+    DocumentSnapshot doc = await _db.collection('consecutivo').document('ordenProduccion').get();
+    return doc.data['consecutivo'];
+  }
+
+  ///La funcion setConsecutivoOrden tiene como objetivo aumentar en uno el consecutivo en el sistema
+  Future<Null> setConsecutivoOrden(int consecutivo) async{
+    DocumentReference consecutivoRef = Firestore.instance.collection('consecutivo').document("ordenProduccion");
+    await consecutivoRef.setData({"consecutivo": consecutivo+1});
+  }
+
+
   
   Future<List<DetalleRollo>> getListaRollos() async {
     QuerySnapshot query = await _db.collection('controlRollo').getDocuments();
