@@ -1,0 +1,1522 @@
+{
+   "H-08": {
+      "nombre": "H-08",
+      "cantLam": 6,
+      "des": 16.6,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 3.274,
+      "kilosLaminaFleje": 0.55,
+      "longLamina": 0.97
+   },
+   "H-16": {
+      "nombre": "H-16",
+      "cantLam": 6,
+      "des": 16.6,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 6.582,
+      "kilosLaminaFleje": 1.1,
+      "longLamina": 1.95
+   },
+   "H-18": {
+      "nombre": "H-18",
+      "cantLam": 6,
+      "des": 16.6,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 7.392,
+      "kilosLaminaFleje": 1.23,
+      "longLamina": 2.19
+   },
+   "H-20": {
+      "nombre": "H-20",
+      "cantLam": 6,
+      "des": 16.6,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 8.236,
+      "kilosLaminaFleje": 1.37,
+      "longLamina": 2.44
+   },
+   "H-22": {
+      "nombre": "H-22",
+      "cantLam": 6,
+      "des": 16.6,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 9.046,
+      "kilosLaminaFleje": 1.51,
+      "longLamina": 2.68
+   },
+   "H-24": {
+      "nombre": "H-24",
+      "cantLam": 4,
+      "des": 25,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 9.856,
+      "kilosLaminaFleje": 2.46,
+      "longLamina": 2.92
+   },
+   "H-26": {
+      "nombre": "H-26",
+      "cantLam": 4,
+      "des": 25,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 10.7,
+      "kilosLaminaFleje": 2.68,
+      "longLamina": 3.17
+   },
+   "H-28": {
+      "nombre": "H-28",
+      "cantLam": 4,
+      "des": 25,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 11.51,
+      "kilosLaminaFleje": 2.88,
+      "longLamina": 3.41
+   },
+   "H-30": {
+      "nombre": "H-30",
+      "cantLam": 4,
+      "des": 25,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 12.354,
+      "kilosLaminaFleje": 3.09,
+      "longLamina": 3.66
+   },
+   "H-32": {
+      "nombre": "H-32",
+      "cantLam": 4,
+      "des": 25,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 13.164,
+      "kilosLaminaFleje": 3.29,
+      "longLamina": 3.9
+   },
+   "H-34": {
+      "nombre": "H-34",
+      "cantLam": 4,
+      "des": 25,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 13.975,
+      "kilosLaminaFleje": 3.49,
+      "longLamina": 4.14
+   },
+   "H-36": {
+      "nombre": "H-36",
+      "cantLam": 4,
+      "des": 25,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 14.818,
+      "kilosLaminaFleje": 3.7,
+      "longLamina": 4.39
+   },
+   "H-38": {
+      "nombre": "H-38",
+      "cantLam": 4,
+      "des": 25,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 16.034,
+      "kilosLaminaFleje": 4.01,
+      "longLamina": 4.75
+   },
+   "H-40": {
+      "nombre": "H-40",
+      "cantLam": 4,
+      "des": 25,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 16.472,
+      "kilosLaminaFleje": 4.12,
+      "longLamina": 4.88
+   },
+   "H-42": {
+      "nombre": "H-42",
+      "cantLam": 4,
+      "des": 25,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 17.283,
+      "kilosLaminaFleje": 4.32,
+      "longLamina": 5.12
+   },
+   "H-44": {
+      "nombre": "H-44",
+      "cantLam": 4,
+      "des": 25,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 18.093,
+      "kilosLaminaFleje": 4.52,
+      "longLamina": 5.36
+   },
+   "H-46": {
+      "nombre": "H-46",
+      "cantLam": 4,
+      "des": 25,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 18.937,
+      "kilosLaminaFleje": 4.73,
+      "longLamina": 5.61
+   },
+   "H-48": {
+      "nombre": "H-48",
+      "cantLam": 4,
+      "des": 25,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 19.747,
+      "kilosLaminaFleje": 4.94,
+      "longLamina": 5.85
+   },
+   "K-08": {
+      "nombre": "K-08",
+      "cantLam": 4,
+      "des": 24,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 3.274,
+      "kilosLaminaFleje": 0.82,
+      "longLamina": 0.97
+   },
+   "K-16": {
+      "nombre": "K-16",
+      "cantLam": 4,
+      "des": 24,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 6.582,
+      "kilosLaminaFleje": 1.65,
+      "longLamina": 1.95
+   },
+   "K-18": {
+      "nombre": "K-18",
+      "cantLam": 4,
+      "des": 24,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 7.359,
+      "kilosLaminaFleje": 1.84,
+      "longLamina": 2.18
+   },
+   "K-20": {
+      "nombre": "K-20",
+      "cantLam": 4,
+      "des": 24,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 8.236,
+      "kilosLaminaFleje": 2.06,
+      "longLamina": 2.44
+   },
+   "K-22": {
+      "nombre": "K-22",
+      "cantLam": 4,
+      "des": 24,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 9.046,
+      "kilosLaminaFleje": 2.26,
+      "longLamina": 2.68
+   },
+   "K-24": {
+      "nombre": "K-24",
+      "cantLam": 3,
+      "des": 33.3,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 9.856,
+      "kilosLaminaFleje": 3.29,
+      "longLamina": 2.92
+   },
+   "K-26": {
+      "nombre": "K-26",
+      "cantLam": 3,
+      "des": 33.3,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 10.7,
+      "kilosLaminaFleje": 3.57,
+      "longLamina": 3.17
+   },
+   "K-28": {
+      "nombre": "K-28",
+      "cantLam": 3,
+      "des": 33.3,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 11.51,
+      "kilosLaminaFleje": 3.84,
+      "longLamina": 3.41
+   },
+   "K-30": {
+      "nombre": "K-30",
+      "cantLam": 3,
+      "des": 33.3,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 12.354,
+      "kilosLaminaFleje": 4.12,
+      "longLamina": 3.66
+   },
+   "K-32": {
+      "nombre": "K-32",
+      "cantLam": 3,
+      "des": 33.3,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 13.164,
+      "kilosLaminaFleje": 4.39,
+      "longLamina": 3.9
+   },
+   "K-34": {
+      "nombre": "K-34",
+      "cantLam": 3,
+      "des": 33.3,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 13.975,
+      "kilosLaminaFleje": 4.66,
+      "longLamina": 4.14
+   },
+   "K-36": {
+      "nombre": "K-36",
+      "cantLam": 3,
+      "des": 33.3,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 14.818,
+      "kilosLaminaFleje": 4.94,
+      "longLamina": 4.39
+   },
+   "K-38": {
+      "nombre": "K-38",
+      "cantLam": 3,
+      "des": 33.3,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 16.034,
+      "kilosLaminaFleje": 5.34,
+      "longLamina": 4.75
+   },
+   "K-40": {
+      "nombre": "K-40",
+      "cantLam": 3,
+      "des": 33.3,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 16.472,
+      "kilosLaminaFleje": 5.49,
+      "longLamina": 4.88
+   },
+   "K-42": {
+      "nombre": "K-42",
+      "cantLam": 3,
+      "des": 33.3,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 17.283,
+      "kilosLaminaFleje": 5.76,
+      "longLamina": 5.12
+   },
+   "K-44": {
+      "nombre": "K-44",
+      "cantLam": 3,
+      "des": 33.3,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 18.093,
+      "kilosLaminaFleje": 6.03,
+      "longLamina": 5.36
+   },
+   "K-46": {
+      "nombre": "K-46",
+      "cantLam": 3,
+      "des": 33.3,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 18.937,
+      "kilosLaminaFleje": 6.31,
+      "longLamina": 5.61
+   },
+   "K-48": {
+      "nombre": "K-48",
+      "cantLam": 3,
+      "des": 33.3,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 19.747,
+      "kilosLaminaFleje": 6.58,
+      "longLamina": 5.85
+   },
+   "L-08": {
+      "nombre": "L-08",
+      "cantLam": 3,
+      "des": 22,
+      "cantAdicional": 2,
+      "prodAdicional": "H-08",
+      "kilosLamina": 3.274,
+      "kilosLaminaFleje": 0.72,
+      "longLamina": 0.97
+   },
+   "L-16": {
+      "nombre": "L-16",
+      "cantLam": 3,
+      "des": 22,
+      "cantAdicional": 2,
+      "prodAdicional": "H-16",
+      "kilosLamina": 6.582,
+      "kilosLaminaFleje": 0.74,
+      "longLamina": 1.95
+   },
+   "L-18": {
+      "nombre": "L-18",
+      "cantLam": 3,
+      "des": 22,
+      "cantAdicional": 2,
+      "prodAdicional": "H-18",
+      "kilosLamina": 7.392,
+      "kilosLaminaFleje": 1.63,
+      "longLamina": 2.19
+   },
+   "L-20": {
+      "nombre": "L-20",
+      "cantLam": 3,
+      "des": 22,
+      "cantAdicional": 2,
+      "prodAdicional": "H-20",
+      "kilosLamina": 8.236,
+      "kilosLaminaFleje": 1.81,
+      "longLamina": 2.44
+   },
+   "L-22": {
+      "nombre": "L-22",
+      "cantLam": 3,
+      "des": 22,
+      "cantAdicional": 2,
+      "prodAdicional": "H-22",
+      "kilosLamina": 9.046,
+      "kilosLaminaFleje": 1.99,
+      "longLamina": 2.68
+   },
+   "L-24": {
+      "nombre": "L-24",
+      "cantLam": 3,
+      "des": 22,
+      "cantAdicional": 1,
+      "prodAdicional": "K-24",
+      "kilosLamina": 9.856,
+      "kilosLaminaFleje": 2.17,
+      "longLamina": 2.92
+   },
+   "L-26": {
+      "nombre": "L-26",
+      "cantLam": 3,
+      "des": 22,
+      "cantAdicional": 1,
+      "prodAdicional": "K-26",
+      "kilosLamina": 10.7,
+      "kilosLaminaFleje": 2.35,
+      "longLamina": 3.17
+   },
+   "L-28": {
+      "nombre": "L-28",
+      "cantLam": 3,
+      "des": 22,
+      "cantAdicional": 1,
+      "prodAdicional": "K-28",
+      "kilosLamina": 11.51,
+      "kilosLaminaFleje": 2.53,
+      "longLamina": 3.41
+   },
+   "L-30": {
+      "nombre": "L-30",
+      "cantLam": 3,
+      "des": 22,
+      "cantAdicional": 1,
+      "prodAdicional": "K-30",
+      "kilosLamina": 12.354,
+      "kilosLaminaFleje": 2.72,
+      "longLamina": 3.66
+   },
+   "L-32": {
+      "nombre": "L-32",
+      "cantLam": 3,
+      "des": 22,
+      "cantAdicional": 1,
+      "prodAdicional": "K-32",
+      "kilosLamina": 13.164,
+      "kilosLaminaFleje": 2.9,
+      "longLamina": 3.9
+   },
+   "L-34": {
+      "nombre": "L-34",
+      "cantLam": 3,
+      "des": 22,
+      "cantAdicional": 1,
+      "prodAdicional": "K-34",
+      "kilosLamina": 13.975,
+      "kilosLaminaFleje": 3.07,
+      "longLamina": 4.14
+   },
+   "L-36": {
+      "nombre": "L-36",
+      "cantLam": 3,
+      "des": 22,
+      "cantAdicional": 1,
+      "prodAdicional": "K-36",
+      "kilosLamina": 14.818,
+      "kilosLaminaFleje": 3.26,
+      "longLamina": 4.39
+   },
+   "L-38": {
+      "nombre": "L-38",
+      "cantLam": 3,
+      "des": 22,
+      "cantAdicional": 1,
+      "prodAdicional": "K-38",
+      "kilosLamina": 16.034,
+      "kilosLaminaFleje": 3.53,
+      "longLamina": 4.75
+   },
+   "L-40": {
+      "nombre": "L-40",
+      "cantLam": 3,
+      "des": 22,
+      "cantAdicional": 1,
+      "prodAdicional": "K-40",
+      "kilosLamina": 16.472,
+      "kilosLaminaFleje": 3.62,
+      "longLamina": 4.88
+   },
+   "L-42": {
+      "nombre": "L-42",
+      "cantLam": 3,
+      "des": 22,
+      "cantAdicional": 1,
+      "prodAdicional": "K-42",
+      "kilosLamina": 17.283,
+      "kilosLaminaFleje": 3.8,
+      "longLamina": 5.12
+   },
+   "L-44": {
+      "nombre": "L-44",
+      "cantLam": 3,
+      "des": 22,
+      "cantAdicional": 1,
+      "prodAdicional": "K-44",
+      "kilosLamina": 18.093,
+      "kilosLaminaFleje": 3.98,
+      "longLamina": 5.36
+   },
+   "L-46": {
+      "nombre": "L-46",
+      "cantLam": 3,
+      "des": 22,
+      "cantAdicional": 1,
+      "prodAdicional": "K-46",
+      "kilosLamina": 18.937,
+      "kilosLaminaFleje": 4.17,
+      "longLamina": 5.61
+   },
+   "L-48": {
+      "nombre": "L-48",
+      "cantLam": 3,
+      "des": 22,
+      "cantAdicional": 1,
+      "prodAdicional": "K-48",
+      "kilosLamina": 19.747,
+      "kilosLaminaFleje": 4.34,
+      "longLamina": 5.85
+   },
+   "S-08": {
+      "nombre": "S-08",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 5.495,
+      "kilosLaminaFleje": 0.34,
+      "longLamina": 1
+   },
+   "S-10": {
+      "nombre": "S-10",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 6.704,
+      "kilosLaminaFleje": 0.41,
+      "longLamina": 1.22
+   },
+   "S-12": {
+      "nombre": "S-12",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 8.243,
+      "kilosLaminaFleje": 0.51,
+      "longLamina": 1.5
+   },
+   "S-14": {
+      "nombre": "S-14",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 9.342,
+      "kilosLaminaFleje": 0.57,
+      "longLamina": 1.7
+   },
+   "S-16": {
+      "nombre": "S-16",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 10.99,
+      "kilosLaminaFleje": 0.68,
+      "longLamina": 2
+   },
+   "S-18": {
+      "nombre": "S-18",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 11.979,
+      "kilosLaminaFleje": 0.74,
+      "longLamina": 2.18
+   },
+   "S-20": {
+      "nombre": "S-20",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 13.298,
+      "kilosLaminaFleje": 0.82,
+      "longLamina": 2.42
+   },
+   "S-22": {
+      "nombre": "S-22",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 14.617,
+      "kilosLaminaFleje": 0.9,
+      "longLamina": 2.66
+   },
+   "S-24": {
+      "nombre": "S-24",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 15.936,
+      "kilosLaminaFleje": 0.98,
+      "longLamina": 2.9
+   },
+   "S-26": {
+      "nombre": "S-26",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 17.419,
+      "kilosLaminaFleje": 1.07,
+      "longLamina": 3.17
+   },
+   "S-28": {
+      "nombre": "S-28",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 18.738,
+      "kilosLaminaFleje": 1.15,
+      "longLamina": 3.41
+   },
+   "S-30": {
+      "nombre": "S-30",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 20.112,
+      "kilosLaminaFleje": 1.24,
+      "longLamina": 3.66
+   },
+   "S-32": {
+      "nombre": "S-32",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 21.431,
+      "kilosLaminaFleje": 1.32,
+      "longLamina": 3.9
+   },
+   "S-34": {
+      "nombre": "S-34",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 22.749,
+      "kilosLaminaFleje": 1.4,
+      "longLamina": 4.14
+   },
+   "S-36": {
+      "nombre": "S-36",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 24.123,
+      "kilosLaminaFleje": 1.48,
+      "longLamina": 4.39
+   },
+   "S-38": {
+      "nombre": "S-38",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 25.442,
+      "kilosLaminaFleje": 1.56,
+      "longLamina": 4.63
+   },
+   "S-40": {
+      "nombre": "S-40",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 26.816,
+      "kilosLaminaFleje": 1.65,
+      "longLamina": 4.88
+   },
+   "S-42": {
+      "nombre": "S-42",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 28.134,
+      "kilosLaminaFleje": 1.73,
+      "longLamina": 5.12
+   },
+   "S-44": {
+      "nombre": "S-44",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 29.453,
+      "kilosLaminaFleje": 1.81,
+      "longLamina": 5.36
+   },
+   "S-46": {
+      "nombre": "S-46",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 30.827,
+      "kilosLaminaFleje": 1.89,
+      "longLamina": 5.61
+   },
+   "S-48": {
+      "nombre": "S-48",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 32.146,
+      "kilosLaminaFleje": 1.97,
+      "longLamina": 5.85
+   },
+   "S-08 PERFORADA": {
+      "nombre": "S-08 PERFORADA",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 5.495,
+      "kilosLaminaFleje": 0.34,
+      "longLamina": 1
+   },
+   "S-10 PERFORADA": {
+      "nombre": "S-010 PERFORADA",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 6.704,
+      "kilosLaminaFleje": 0.41,
+      "longLamina": 1.22
+   },
+   "S-12 PERFORADA": {
+      "nombre": "S-012 PERFORADA",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 8.243,
+      "kilosLaminaFleje": 0.51,
+      "longLamina": 1.5
+   },
+   "S-14 PERFORADA": {
+      "nombre": "S-014 PERFORADA",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 9.342,
+      "kilosLaminaFleje": 0.57,
+      "longLamina": 1.7
+   },
+   "S-16 PERFORADA": {
+      "nombre": "S-016 PERFORADA",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 10.99,
+      "kilosLaminaFleje": 0.68,
+      "longLamina": 2
+   },
+   "S-18 PERFORADA": {
+      "nombre": "S-018 PERFORADA",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 11.979,
+      "kilosLaminaFleje": 0.74,
+      "longLamina": 2.18
+   },
+   "S-20 PERFORADA": {
+      "nombre": "S-020 PERFORADA",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 13.298,
+      "kilosLaminaFleje": 0.82,
+      "longLamina": 2.42
+   },
+   "S-22 PERFORADA": {
+      "nombre": "S-022 PERFORADA",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 14.617,
+      "kilosLaminaFleje": 0.9,
+      "longLamina": 2.66
+   },
+   "S-24 PERFORADA": {
+      "nombre": "S-024 PERFORADA",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 15.936,
+      "kilosLaminaFleje": 0.98,
+      "longLamina": 2.9
+   },
+   "S-26 PERFORADA": {
+      "nombre": "S-026 PERFORADA",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 17.419,
+      "kilosLaminaFleje": 1.07,
+      "longLamina": 3.17
+   },
+   "S-28 PERFORADA": {
+      "nombre": "S-028 PERFORADA",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 18.738,
+      "kilosLaminaFleje": 1.15,
+      "longLamina": 3.41
+   },
+   "S-30 PERFORADA": {
+      "nombre": "S-030 PERFORADA",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 20.112,
+      "kilosLaminaFleje": 1.24,
+      "longLamina": 3.66
+   },
+   "S-32 PERFORADA": {
+      "nombre": "S-032 PERFORADA",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 21.431,
+      "kilosLaminaFleje": 1.32,
+      "longLamina": 3.9
+   },
+   "S-34 PERFORADA": {
+      "nombre": "S-034 PERFORADA",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 22.749,
+      "kilosLaminaFleje": 1.4,
+      "longLamina": 4.14
+   },
+   "S-36 PERFORADA": {
+      "nombre": "S-036 PERFORADA",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 24.123,
+      "kilosLaminaFleje": 1.48,
+      "longLamina": 4.39
+   },
+   "S-38 PERFORADA": {
+      "nombre": "S-038 PERFORADA",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 25.442,
+      "kilosLaminaFleje": 1.56,
+      "longLamina": 4.63
+   },
+   "S-40 PERFORADA": {
+      "nombre": "S-040 PERFORADA",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 26.816,
+      "kilosLaminaFleje": 1.65,
+      "longLamina": 4.88
+   },
+   "S-42 PERFORADA": {
+      "nombre": "S-042 PERFORADA",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 28.134,
+      "kilosLaminaFleje": 1.73,
+      "longLamina": 5.12
+   },
+   "S-44 PERFORADA": {
+      "nombre": "S-044 PERFORADA",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 29.453,
+      "kilosLaminaFleje": 1.81,
+      "longLamina": 5.36
+   },
+   "S-46 PERFORADA": {
+      "nombre": "S-046 PERFORADA",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 30.827,
+      "kilosLaminaFleje": 1.89,
+      "longLamina": 5.61
+   },
+   "S-48 PERFORADA": {
+      "nombre": "S-048 PERFORADA",
+      "cantLam": 10,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 32.146,
+      "kilosLaminaFleje": 1.97,
+      "longLamina": 5.85
+   },
+   "T-08": {
+      "nombre": "T-08",
+      "cantLam": 4,
+      "des": 25,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 3.274,
+      "kilosLaminaFleje": 0.82,
+      "longLamina": 0.97
+   },
+   "T-16": {
+      "nombre": "T-16",
+      "cantLam": 4,
+      "des": 25,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 6.582,
+      "kilosLaminaFleje": 1.65,
+      "longLamina": 1.95
+   },
+   "T-18": {
+      "nombre": "T-18",
+      "cantLam": 4,
+      "des": 25,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 7.392,
+      "kilosLaminaFleje": 1.85,
+      "longLamina": 2.19
+   },
+   "T-20": {
+      "nombre": "T-20",
+      "cantLam": 4,
+      "des": 25,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 8.236,
+      "kilosLaminaFleje": 2.06,
+      "longLamina": 2.44
+   },
+   "T-22": {
+      "nombre": "T-22",
+      "cantLam": 4,
+      "des": 25,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 9.046,
+      "kilosLaminaFleje": 2.26,
+      "longLamina": 2.68
+   },
+   "T-24": {
+      "nombre": "T-24",
+      "cantLam": 3,
+      "des": 33.3,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 9.856,
+      "kilosLaminaFleje": 3.29,
+      "longLamina": 2.92
+   },
+   "T-26": {
+      "nombre": "T-26",
+      "cantLam": 3,
+      "des": 33.3,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 10.7,
+      "kilosLaminaFleje": 3.57,
+      "longLamina": 3.17
+   },
+   "T-28": {
+      "nombre": "T-28",
+      "cantLam": 3,
+      "des": 33.3,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 11.51,
+      "kilosLaminaFleje": 3.84,
+      "longLamina": 3.41
+   },
+   "T-30": {
+      "nombre": "T-30",
+      "cantLam": 3,
+      "des": 33.3,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 12.354,
+      "kilosLaminaFleje": 4.12,
+      "longLamina": 3.66
+   },
+   "T-32": {
+      "nombre": "T-32",
+      "cantLam": 3,
+      "des": 33.3,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 13.164,
+      "kilosLaminaFleje": 4.39,
+      "longLamina": 3.9
+   },
+   "T-34": {
+      "nombre": "T-34",
+      "cantLam": 3,
+      "des": 33.3,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 13.975,
+      "kilosLaminaFleje": 4.66,
+      "longLamina": 4.14
+   },
+   "T-36": {
+      "nombre": "T-36",
+      "cantLam": 3,
+      "des": 33.3,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 14.818,
+      "kilosLaminaFleje": 4.94,
+      "longLamina": 4.39
+   },
+   "T-38": {
+      "nombre": "T-38",
+      "cantLam": 3,
+      "des": 33.3,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 16.034,
+      "kilosLaminaFleje": 5.34,
+      "longLamina": 4.75
+   },
+   "T-40": {
+      "nombre": "T-40",
+      "cantLam": 3,
+      "des": 33.3,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 16.472,
+      "kilosLaminaFleje": 5.49,
+      "longLamina": 4.88
+   },
+   "T-42": {
+      "nombre": "T-42",
+      "cantLam": 3,
+      "des": 33.3,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 17.283,
+      "kilosLaminaFleje": 5.76,
+      "longLamina": 5.12
+   },
+   "T-44": {
+      "nombre": "T-44",
+      "cantLam": 3,
+      "des": 33.3,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 18.093,
+      "kilosLaminaFleje": 6.03,
+      "longLamina": 5.36
+   },
+   "T-46": {
+      "nombre": "T-46",
+      "cantLam": 3,
+      "des": 33.3,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 18.937,
+      "kilosLaminaFleje": 6.31,
+      "longLamina": 5.61
+   },
+   "T-48": {
+      "nombre": "T-48",
+      "cantLam": 3,
+      "des": 33.3,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 19.747,
+      "kilosLaminaFleje": 6.58,
+      "longLamina": 5.85
+   },
+   "U-08": {
+      "nombre": "U-08",
+      "cantLam": 14,
+      "des": 7,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 5.495,
+      "kilosLaminaFleje": 0.24,
+      "longLamina": 1
+   },
+   "U-10": {
+      "nombre": "U-10",
+      "cantLam": 14,
+      "des": 7,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 6.704,
+      "kilosLaminaFleje": 0.29,
+      "longLamina": 1.22
+   },
+   "U-12": {
+      "nombre": "U-12",
+      "cantLam": 14,
+      "des": 7,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 8.243,
+      "kilosLaminaFleje": 0.36,
+      "longLamina": 1.5
+   },
+   "U-14": {
+      "nombre": "U-14",
+      "cantLam": 14,
+      "des": 7,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 9.342,
+      "kilosLaminaFleje": 0.41,
+      "longLamina": 1.7
+   },
+   "U-16": {
+      "nombre": "U-16",
+      "cantLam": 14,
+      "des": 7,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 10.66,
+      "kilosLaminaFleje": 0.47,
+      "longLamina": 1.94
+   },
+   "U-18": {
+      "nombre": "U-18",
+      "cantLam": 14,
+      "des": 7,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 11.979,
+      "kilosLaminaFleje": 0.53,
+      "longLamina": 2.18
+   },
+   "U-20": {
+      "nombre": "U-20",
+      "cantLam": 14,
+      "des": 7,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 13.298,
+      "kilosLaminaFleje": 0.58,
+      "longLamina": 2.42
+   },
+   "U-22": {
+      "nombre": "U-22",
+      "cantLam": 14,
+      "des": 7,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 14.617,
+      "kilosLaminaFleje": 0.64,
+      "longLamina": 2.66
+   },
+   "U-24": {
+      "nombre": "U-24",
+      "cantLam": 14,
+      "des": 7,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 15.936,
+      "kilosLaminaFleje": 0.7,
+      "longLamina": 2.9
+   },
+   "U-26": {
+      "nombre": "U-26",
+      "cantLam": 14,
+      "des": 8,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 17.419,
+      "kilosLaminaFleje": 0.76,
+      "longLamina": 3.17
+   },
+   "U-28": {
+      "nombre": "U-28",
+      "cantLam": 14,
+      "des": 9,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 18.738,
+      "kilosLaminaFleje": 0.82,
+      "longLamina": 3.41
+   },
+   "U-30": {
+      "nombre": "U-30",
+      "cantLam": 14,
+      "des": 10,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 20.112,
+      "kilosLaminaFleje": 0.88,
+      "longLamina": 3.66
+   },
+   "U-32": {
+      "nombre": "U-32",
+      "cantLam": 14,
+      "des": 11,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 21.431,
+      "kilosLaminaFleje": 0.94,
+      "longLamina": 3.9
+   },
+   "U-34": {
+      "nombre": "U-34",
+      "cantLam": 14,
+      "des": 12,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 22.749,
+      "kilosLaminaFleje": 1,
+      "longLamina": 4.14
+   },
+   "U-36": {
+      "nombre": "U-36",
+      "cantLam": 14,
+      "des": 13,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 24.123,
+      "kilosLaminaFleje": 1.06,
+      "longLamina": 4.39
+   },
+   "U-38": {
+      "nombre": "U-38",
+      "cantLam": 14,
+      "des": 14,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 25.442,
+      "kilosLaminaFleje": 1.12,
+      "longLamina": 4.63
+   },
+   "U-40": {
+      "nombre": "U-40",
+      "cantLam": 14,
+      "des": 15,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 26.816,
+      "kilosLaminaFleje": 1.18,
+      "longLamina": 4.88
+   },
+   "U-42": {
+      "nombre": "U-42",
+      "cantLam": 14,
+      "des": 16,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 28.134,
+      "kilosLaminaFleje": 1.23,
+      "longLamina": 5.12
+   },
+   "U-44": {
+      "nombre": "U-44",
+      "cantLam": 14,
+      "des": 17,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 29.453,
+      "kilosLaminaFleje": 1.29,
+      "longLamina": 5.36
+   },
+   "U-46": {
+      "nombre": "U-46",
+      "cantLam": 14,
+      "des": 18,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 30.827,
+      "kilosLaminaFleje": 1.35,
+      "longLamina": 5.61
+   },
+   "U-48": {
+      "nombre": "U-48",
+      "cantLam": 14,
+      "des": 19,
+      "cantAdicional": 0,
+      "prodAdicional": "",
+      "kilosLamina": 32.146,
+      "kilosLaminaFleje": 1.41,
+      "longLamina": 5.85
+   },
+   "X-16": {
+      "nombre": "X-16",
+      "cantLam": 2,
+      "des": 38.2,
+      "cantAdicional": 1,
+      "prodAdicional": "K-16",
+      "kilosLamina": 6.582,
+      "kilosLaminaFleje": 2.51,
+      "longLamina": 1.95
+   },
+   "X-18": {
+      "nombre": "X-18",
+      "cantLam": 2,
+      "des": 38.2,
+      "cantAdicional": 1,
+      "prodAdicional": "K-18",
+      "kilosLamina": 7.392,
+      "kilosLaminaFleje": 2.82,
+      "longLamina": 2.19
+   },
+   "X-20": {
+      "nombre": "X-20",
+      "cantLam": 2,
+      "des": 38.2,
+      "cantAdicional": 1,
+      "prodAdicional": "K-20",
+      "kilosLamina": 8.236,
+      "kilosLaminaFleje": 3.15,
+      "longLamina": 2.44
+   },
+   "X-22": {
+      "nombre": "X-22",
+      "cantLam": 2,
+      "des": 38.2,
+      "cantAdicional": 1,
+      "prodAdicional": "K-22",
+      "kilosLamina": 9.046,
+      "kilosLaminaFleje": 3.46,
+      "longLamina": 2.68
+   },
+   "X-24": {
+      "nombre": "X-24",
+      "cantLam": 2,
+      "des": 38.2,
+      "cantAdicional": 1,
+      "prodAdicional": "L-24",
+      "kilosLamina": 9.856,
+      "kilosLaminaFleje": 3.77,
+      "longLamina": 2.92
+   },
+   "X-26": {
+      "nombre": "X-26",
+      "cantLam": 2,
+      "des": 38.2,
+      "cantAdicional": 1,
+      "prodAdicional": "L-26",
+      "kilosLamina": 10.7,
+      "kilosLaminaFleje": 4.09,
+      "longLamina": 3.17
+   },
+   "X-28": {
+      "nombre": "X-28",
+      "cantLam": 2,
+      "des": 38.2,
+      "cantAdicional": 1,
+      "prodAdicional": "L-28",
+      "kilosLamina": 11.51,
+      "kilosLaminaFleje": 4.4,
+      "longLamina": 3.41
+   },
+   "X-30": {
+      "nombre": "X-30",
+      "cantLam": 2,
+      "des": 38.2,
+      "cantAdicional": 1,
+      "prodAdicional": "L-30",
+      "kilosLamina": 12.354,
+      "kilosLaminaFleje": 4.72,
+      "longLamina": 3.66
+   },
+   "X-32": {
+      "nombre": "X-32",
+      "cantLam": 2,
+      "des": 38.2,
+      "cantAdicional": 1,
+      "prodAdicional": "L-32",
+      "kilosLamina": 13.164,
+      "kilosLaminaFleje": 5.03,
+      "longLamina": 3.9
+   },
+   "X-34": {
+      "nombre": "X-34",
+      "cantLam": 2,
+      "des": 38.2,
+      "cantAdicional": 1,
+      "prodAdicional": "L-34",
+      "kilosLamina": 13.975,
+      "kilosLaminaFleje": 5.34,
+      "longLamina": 4.14
+   },
+   "X-36": {
+      "nombre": "X-36",
+      "cantLam": 2,
+      "des": 38.2,
+      "cantAdicional": 1,
+      "prodAdicional": "L-36",
+      "kilosLamina": 14.818,
+      "kilosLaminaFleje": 5.66,
+      "longLamina": 4.39
+   },
+   "X-38": {
+      "nombre": "X-38",
+      "cantLam": 2,
+      "des": 38.2,
+      "cantAdicional": 1,
+      "prodAdicional": "L-38",
+      "kilosLamina": 16.034,
+      "kilosLaminaFleje": 6.12,
+      "longLamina": 4.75
+   },
+   "X-40": {
+      "nombre": "X-40",
+      "cantLam": 2,
+      "des": 38.2,
+      "cantAdicional": 1,
+      "prodAdicional": "L-40",
+      "kilosLamina": 16.472,
+      "kilosLaminaFleje": 6.29,
+      "longLamina": 4.88
+   },
+   "X-42": {
+      "nombre": "X-42",
+      "cantLam": 2,
+      "des": 38.2,
+      "cantAdicional": 1,
+      "prodAdicional": "L-42",
+      "kilosLamina": 17.283,
+      "kilosLaminaFleje": 6.6,
+      "longLamina": 5.12
+   },
+   "X-44": {
+      "nombre": "X-44",
+      "cantLam": 2,
+      "des": 38.2,
+      "cantAdicional": 1,
+      "prodAdicional": "L-44",
+      "kilosLamina": 18.093,
+      "kilosLaminaFleje": 6.91,
+      "longLamina": 5.36
+   },
+   "X-46": {
+      "nombre": "X-46",
+      "cantLam": 2,
+      "des": 38.2,
+      "cantAdicional": 1,
+      "prodAdicional": "L-46",
+      "kilosLamina": 18.937,
+      "kilosLaminaFleje": 7.23,
+      "longLamina": 5.61
+   },
+   "X-48": {
+      "nombre": "X-48",
+      "cantLam": 2,
+      "des": 38.2,
+      "cantAdicional": 1,
+      "prodAdicional": "L-48",
+      "kilosLamina": 19.747,
+      "kilosLaminaFleje": 7.54,
+      "longLamina": 5.85
+   }
+}

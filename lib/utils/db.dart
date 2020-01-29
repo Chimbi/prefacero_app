@@ -117,6 +117,24 @@ class DatabaseService {
     },merge: true);
   }
 
+  //TODO actualizar el consumo de rollo en el bloc
+  Future<DetalleRollo> setConsumoRollo (OrdenProduccion orden, ConsumoRollo consumo, DetalleRollo rollo){
+    DocumentReference rolloRef = Firestore.instance.collection('controlRollo').document(orden.remesaRollo);
+    rolloRef.setData({
+      "consumo": {"${consumo.fecha}": consumo.toMap()}
+    }, merge: true);
+    print("Gastado: ${rollo.gastado}, consumo: ${consumo.kilosTotales}, disponible: ${rollo.disponible}");
+    //Actualiza el rollo con el gasto y lo retorna en la funcion para actualizar el Bloc
+    rollo.gastado = rollo.gastado + consumo.kilosTotales;
+    rollo.disponible = rollo.disponible - consumo.kilosTotales;
+    rolloRef.setData({
+      "gastado": rollo.gastado,
+      "disponible": rollo.disponible,
+    }, merge: true);
+    //se retorna el objeto rollo modificado para actualizar el bloc
+    return Future.value(rollo);
+  }
+
   Future<Null> setRollo (DetalleRollo rollo) async {
     DocumentReference rolloRef = Firestore.instance.collection('controlRollo').document('${rollo.remesa}');
     await rolloRef.setData(rollo.toMap(),merge: true);
@@ -180,7 +198,12 @@ class DatabaseService {
     print("Lista Rollos ${listaRollos.first.fecha}");
     return listaRollos;
   }
-  
+
+  Future<DetalleRollo> getRollo(String remesa) async {
+    DocumentSnapshot doc = await _db.collection('controlRollo').document('$remesa').get();
+    var rollo = DetalleRollo.fromMap(doc.data);
+    return rollo;
+  }
 
 //TODO Aca esta el problema CUAL???
   Future<Map<String, OrdenProduccion>> getListaOrdenes() async{

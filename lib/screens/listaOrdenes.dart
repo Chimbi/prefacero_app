@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:prefacero_app/bloc/Provider.dart';
+import 'package:prefacero_app/bloc/corteBloc.dart';
 import 'package:prefacero_app/model/produccion.dart';
 import 'package:prefacero_app/screens/cortePage.dart';
 import 'package:prefacero_app/utils/db.dart';
@@ -14,12 +15,15 @@ class AreaCorte extends StatefulWidget {
 
 class _AreaCorteState extends State<AreaCorte> {
 
-  Widget _buildItem(BuildContext context, OrdenProduccion data){
+  Widget _buildItem(BuildContext context, OrdenProduccion data, CorteBloc bloc){
     return Card(
       child: ListTile(
         title: Text("No. Orden: ${data.numero}"),
-        onTap: () => Navigator.push<dynamic>(context, MaterialPageRoute<dynamic>(settings: RouteSettings(name: "/corteOrden"), builder: (BuildContext context) => CortePage(data.key)),
-        ),
+        onTap: () async {
+          DetalleRollo rollo = await DatabaseService().getRollo(data.remesaRollo);
+          bloc.rolloActual.add(rollo);
+          Navigator.push<dynamic>(context, MaterialPageRoute<dynamic>(settings: RouteSettings(name: "/corteOrden"), builder: (BuildContext context) => CortePage(data.key)),);
+        }
       ),
      );
   }
@@ -38,7 +42,7 @@ class _AreaCorteState extends State<AreaCorte> {
         builder: (context, snapshot){
           if(snapshot.hasData){
             return ListView(
-                children: snapshot.data.entries.map((entry) => _buildItem(context,entry.value)).toList()
+                children: snapshot.data.entries.map((entry) => _buildItem(context,entry.value, bloc)).toList()
             );
           } else {
             print("No hay datos");

@@ -32,7 +32,7 @@ class _CortePageState extends State<CortePage> {
           body: CustomScrollView(
         slivers: <Widget>[
           SliverAppBar(
-            title: Text("Prueba"),
+            //title: Text("Prueba", style: TextStyle(color: Colors.red),),
             pinned: true,
             iconTheme: new IconThemeData(color: Theme.of(context).primaryColor),
             elevation: 20.0,
@@ -83,7 +83,7 @@ class _CortePageState extends State<CortePage> {
                                   SizedBox(width: 5),
                                   tipoProceso == "Corte"
                                       ? Text("Terminadas: ${prod.terminadaCorte}")
-                                      : Text("Terminadas: ${prod.terminadaDespunte}")
+                                      : Text(prod.textoDespunte == "" ? "sin despunte" : "Terminadas: ${prod.terminadaDespunte}")
                                 ],
                               ),
                               subtitle: tipoProceso == "Corte"
@@ -134,35 +134,6 @@ class ModalBottomSheet extends StatefulWidget {
   _ModalBottomSheetState createState() => _ModalBottomSheetState();
 }
 
-class Prueba extends StatefulWidget {
-  @override
-  _PruebaState createState() => _PruebaState();
-}
-
-class _PruebaState extends State<Prueba> {
-  TextEditingController pruebaController = TextEditingController();
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      height: 400,
-      child: Column(
-        children: <Widget>[
-          TextField(
-            decoration: InputDecoration(labelText: "Ingrese un valor"),
-            controller: pruebaController,
-            onSubmitted: (value){
-              pruebaController.text = value;
-            },
-          ),
-          Text("Texto cambiando: ${pruebaController.text}")
-        ],
-      ),
-    );
-  }
-}
-
-
 class _ModalBottomSheetState extends State<ModalBottomSheet>
     with SingleTickerProviderStateMixin {
   var heightOfModalBottomSheet = 800.0;
@@ -200,14 +171,11 @@ class _ModalBottomSheetState extends State<ModalBottomSheet>
       child: ListView(
         children: <Widget>[
           SizedBox(height: 20),
-          Center(
-              child: Text("${widget.proceso}",
-                  style: TextStyle(
-                      fontWeight: FontWeight.bold, fontSize: 18))),
           ListTile(
             title: Column(
               children: <Widget>[
-                Text("Producto: ${widget.detalleProd.nombre}"),
+                Text("${widget.detalleProd.nombre}", style: TextStyle(fontSize: 35),),
+                Text("Proceso: ${widget.proceso}", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
                 SizedBox(
                   height: 4,
                 ),
@@ -217,7 +185,7 @@ class _ModalBottomSheetState extends State<ModalBottomSheet>
                   style: TextStyle(
                       fontSize: 18, fontWeight: FontWeight.bold),
                 ),
-                widget.proceso == "Cortea"
+                widget.proceso == "Corte"
                     ? Text("${widget.detalleProd.textoCorte}")
                     : Wrap(
                   children: <Widget>[
@@ -246,6 +214,8 @@ class _ModalBottomSheetState extends State<ModalBottomSheet>
                       if (cantidadController.text != "") {
                         setState(() {
                           finishWork = DateTime.now();
+                          //diferencia medida en segundos, tener en cuenta para convertir a minutos
+                          var difference = finishWork.difference(widget.start).inSeconds;
                           showDialog(
                             context: context,
                             builder: (BuildContext context) {
@@ -267,12 +237,14 @@ class _ModalBottomSheetState extends State<ModalBottomSheet>
                                     child: Text("Correcto"),
                                     onPressed: () {
                                       var indice = widget.mapOrdenes[widget.clave].listProdPerfiles.indexOf(widget.detalleProd);
-                                      var cantidadProceso = int.parse(cantidadController.text);
+                                       var cantidadProceso = int.parse(cantidadController.text);
                                       Map<String, dynamic> map = {
                                         "key": widget.clave,  //Identificador de la orden de produccion
                                         "index": indice,      //Indice en la lista de productos
                                         "proceso": widget.proceso,   //Tipo de proceso: corte o despunte
-                                        "cantidad": cantidadProceso  //Cantidad fabricada
+                                        "cantidad": cantidadProceso, //Cantidad fabricada
+                                        "fechaInicio": widget.start,
+                                        "fechaFin": finishWork,
                                       };
                                       cantidadController.text = "";
                                       widget.bloc.ordenUpdate.add(map);

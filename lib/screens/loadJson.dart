@@ -21,7 +21,7 @@ class _LoadJsonState extends State<LoadJson> {
       body: Center(
         child: Container(
           child: RaisedButton(
-              child: Text("Get info"),
+              child: Text("Get info", style: TextStyle(color: Colors.white),),
               onPressed: () async {
                 var list = await loadProduct();
                 print("Lista ${list.toString()}");
@@ -70,10 +70,10 @@ Future<List<RegContable>> loadProceso(String producto) async {
 }
 
 Future<void> loadProduccion(String producto) async {
-  List<RegContable> listCont = List();
+  //List<RegContable> listCont = List();
   String jsonString = await _loadAssetProduccion();
   final jsonResponse = json.decode(jsonString);
-  //print("Json ${jsonResponse['$producto'].toString()}");
+  print("Json ${jsonResponse['$producto'].toString()}");
   if(jsonResponse['$producto']!=null){
     print("${jsonResponse['$producto']}");
     await DatabaseService().setInfoProduccion(jsonResponse['$producto'], producto);
@@ -90,7 +90,8 @@ Future<void> loadProduccion(String producto) async {
     return null;
   }
 }
-
+///Carga la lista general de productos sobre los cuales se itera para
+///ingresar mas información.
 Future<String> _loadAsset() async {
   return await rootBundle.loadString('assets/perfilesGeneral.json');
 }
@@ -100,5 +101,5 @@ Future<String> _loadAssetProceso() async {
 }
 
 Future<String> _loadAssetProduccion() async {
-  return await rootBundle.loadString('assets/infoProduccion.json');
+  return await rootBundle.loadString('assets/infoProduccion1.json');
 }

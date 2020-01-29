@@ -13,24 +13,25 @@ class Produccion{
   double des;  //Desarrollo producto principal
   // Falta desarrollo del producto adicional
   double kilosLamina;
+  double kilosLaminaFleje;
   double longLamina;
   String nombre;
   int laminas;
   List<RegContable> infoContable;
 
 
-  Produccion({this.cantidad, this.cantidadTerm, this.cantAdicional, this.prodAdicional, this.cantLam, this.des, this.kilosLamina, this.longLamina, this.nombre, this.laminas});
+  Produccion({this.cantidad, this.cantidadTerm, this.cantAdicional, this.prodAdicional, this.cantLam, this.des, this.kilosLamina, this.kilosLaminaFleje, this.longLamina, this.nombre, this.laminas});
 
 
   factory Produccion.fromMap(Map<String, dynamic> map) => Produccion(
     cantAdicional: map['cantAdicional'], prodAdicional: map['prodAdicional'], cantLam: map['cantLam'], des: map['des'].toDouble(),
-    kilosLamina: map['kilosLamina'], longLamina: map['longLamina'], nombre: map['nombre'],
+    kilosLamina: map['kilosLamina'], kilosLaminaFleje: map['kilosLaminaFleje'], longLamina: map['longLamina'], nombre: map['nombre'],
   );
 
 
   Map<String, dynamic> toMap() => {
      "cantidad": cantidad, "cantidadTerm": cantidadTerm, "cantAdicional": cantAdicional, "prodAdicional": prodAdicional, "cantLam": cantLam, "des": des, "kilosLamina": kilosLamina,
-    "longLamina": longLamina, "nombre": nombre,
+    "kilosLaminaFleje": kilosLaminaFleje, "longLamina": longLamina, "nombre": nombre,
   };
 }
 
@@ -143,16 +144,18 @@ class DetalleProdPerfil {
   String textoDespunte2;
   int cantDespunte;
   int terminadaDespunte;
+  double longLamina;
+  double kilosLamina; //Varia dependiendo si el producto se corta de rollo o fleje
 
   DetalleProdPerfil({this.nombre, this.textoCorte, this.cantCorte, this.terminadaCorte,
       this.textoDespunte, this.textoDespunte2, this.cantDespunte,
-      this.terminadaDespunte});
+      this.terminadaDespunte, this.longLamina, this.kilosLamina});
 
   Map<String, dynamic> toMap() =>
       {
         "nombre": nombre, "textoCorte":textoCorte, "cantCorte": cantCorte, "terminadaCorte":terminadaCorte,
         "textoDespunte":textoDespunte, "textoDespunte2": textoDespunte2, "cantDespunte": cantDespunte,
-        "terminadaDespunte": terminadaDespunte
+        "terminadaDespunte": terminadaDespunte, "longLamina": longLamina, "kilosLamina": kilosLamina
       };
 
   factory DetalleProdPerfil.fromMap(Map<String,dynamic> map) => DetalleProdPerfil(
@@ -163,7 +166,9 @@ class DetalleProdPerfil {
     textoDespunte: map['textoDespunte'],
     textoDespunte2: map['textoDespunte2'],
     cantDespunte: map['cantDespunte'],
-    terminadaDespunte: map['terminadaDespunte']
+    terminadaDespunte: map['terminadaDespunte'],
+    longLamina: map['longLamina'],
+    kilosLamina: map['kilosLamina']
   );
 
   factory DetalleProdPerfil.fromProduccion(Produccion prod, int anchoLam, String rollo) => DetalleProdPerfil(
@@ -175,8 +180,9 @@ class DetalleProdPerfil {
     textoDespunte2: rollo == "Rollo" ? "${prod.cantAdicional != 0 ? "Por cada lamina sale ${prod.cantAdicional} tira de ${(anchoLam - prod.des*prod.cantLam).toStringAsFixed(2)} cm = ${prod.cantAdicional*prod.laminas} tiras de ${prod.prodAdicional}" :""}": "",
     terminadaDespunte: 0,
     cantDespunte: rollo == "Rollo" ? prod.laminas : 0,
+    longLamina: prod.longLamina,
+    kilosLamina: rollo == "Rollo" ? prod.kilosLamina: prod.kilosLaminaFleje
   );
-
 }
 
 

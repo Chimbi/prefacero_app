@@ -190,6 +190,7 @@ class _ProduccionSliverDropBoxState extends State<ProduccionSliverDropBox> {
                   adicProductList.add(productoAdic);
                 });
               }
+              //pesoLam representa el total de peso dado por laminas * cantidad
               var pesoLam;
               if(widget.rollo.tipoRollo == "Rollo"){
                 pesoLam = selProd.laminas * selProd.kilosLamina;
@@ -198,13 +199,13 @@ class _ProduccionSliverDropBoxState extends State<ProduccionSliverDropBox> {
                 print("Peso: $pesoLam");
                 print("Desarollo: ${selProd.des}");
               } else {
-                pesoLam = (7.85 * widget.rollo.espesor * selProd.longLamina)/selProd.cantLam * selProd.cantidad;
+                //pesoLam = (7.85 * widget.rollo.espesor * selProd.longLamina)/selProd.cantLam * selProd.cantidad;
+                pesoLam = selProd.cantidad * selProd.kilosLaminaFleje;
                 print("Peso: $pesoLam");
                 print("Desarollo: ${selProd.des}");
               }
 
               setState(() {
-                //TODO Actualmente la informacion de produccion solo tiene los kilos por lamina en Rollo
                 disponibleGlobal = disponibleGlobal - pesoLam;
                 print("Disponible al agregar $disponibleGlobal");
                 productList.add(producto);
@@ -382,7 +383,7 @@ class _ProduccionSliverDropBoxState extends State<ProduccionSliverDropBox> {
                           );
                         }else{
                           //El consumo del rollo es menor o igual que la cantidad disponible
-                          DatabaseService().setOrdenProduccion(produccionList, user.uid, bloc, widget.consecutivo, widget.rollo, widget.rollo.kilos-disponibleGlobal).then((orden) async {
+                          DatabaseService().setOrdenProduccion(produccionList, user.uid, bloc, widget.consecutivo, widget.rollo, widget.rollo.kilos - disponibleGlobal).then((orden) async {
                             //Actualizar el consecutivo en la base de datos
                             DatabaseService().setConsecutivoOrden(widget.consecutivo);
                             //Crear csv
@@ -468,7 +469,7 @@ class _ProduccionSliverDropBoxState extends State<ProduccionSliverDropBox> {
             if(tipoRollo == "Rollo"){
               pesoLam = produccionList[index].kilosLamina * produccionList[index].laminas;
             } else {
-              pesoLam = (7.85 * widget.rollo.espesor * produccionList[index].longLamina)/produccionList[index].cantLam * produccionList[index].cantidad;
+              pesoLam = produccionList[index].kilosLaminaFleje * produccionList[index].cantidad;
             }
             setState(() {
               disponibleGlobal = disponibleGlobal + pesoLam;

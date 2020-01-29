@@ -20,6 +20,7 @@ class CustomError extends Error {
 
 class CorteBloc {
   Map<String, OrdenProduccion> ordenMap;
+  DetalleRollo rolloOrden;
 
   Stream<Map<String, OrdenProduccion>> get ordenes => _ordenesSubject.stream;
 
@@ -34,6 +35,10 @@ class CorteBloc {
 
   final _newOrdenController = StreamController<OrdenProduccion>();
 
+  //Sink rollo orden actual
+  Sink<DetalleRollo> get rolloActual  => _rolloActualController.sink;
+  final _rolloActualController = StreamController<DetalleRollo>();
+
   dispose() {
     _ordenesSubject.close();
   }
@@ -41,6 +46,7 @@ class CorteBloc {
   CorteBloc() {
     //Initialize ordenList
     ordenMap = Map<String,OrdenProduccion>();
+    rolloOrden = DetalleRollo(remesa: "prueba");
 
     getOrdenes().then((_) {
       print("OrdenList: ${ordenMap.toString()}");
@@ -49,7 +55,7 @@ class CorteBloc {
 
     //Listen for the stream of changes in the form of a Map
     _ordenUpdateController.stream.listen((data) {
-      evaluateChanges(data).then((_) {
+      evaluateChanges(data, rolloOrden).then((_) {
         _ordenesSubject.add(ordenMap);
       }
       );
@@ -58,6 +64,11 @@ class CorteBloc {
     _newOrdenController.stream.listen((orden){
       ordenMap.putIfAbsent(orden.key, () => orden);
       _ordenesSubject.add(ordenMap);
+    });
+
+    _rolloActualController.stream.listen((rollo){
+      rolloOrden = rollo;
+      print("rollo actual es ${rolloOrden.remesa}");
     });
 
   }
@@ -69,15 +80,18 @@ class CorteBloc {
     return ordenMap;
   }
 
-  Future<void> evaluateChanges(Map<String, dynamic> data) async {
+  Future<void> evaluateChanges(Map<String, dynamic> data, DetalleRollo rollo) async {
     print("Map en sink: ${data.toString()}");
+    print("Rollo en evaluate: ${rollo.remesa}");
 
+    //key es el identificador de la orden
     String key = data["key"];
 
     //Index se refiere al indice de la lista de detalle producción
     int index = data["index"];
     String proceso = data["proceso"];
     int cantidad = data["cantidad"];
+    DateTime fecha = data["fecha"];
     int valorAntes;
     int cantOrden;
     int cantidadNueva;
@@ -92,27 +106,37 @@ class CorteBloc {
       if (cantidadNueva > cantOrden) {
         throw CustomError("La cantidad no puede ser superior a la orden");
       } else {
+        //Proceso Corte
+        //Cantidad inferior o igual a la orden => modifica la cantidad terminada en la orden
         orden.listProdPerfiles[index].terminadaCorte = cantidadNueva;
+
+        //Consumo del rollo se presenta unicamente en el corte no en despunte
+        var consumoRollo = ConsumoRollo(producto: orden.listProdPerfiles[index].nombre, fecha:  fecha, numOrden: orden.numero, longTotal: orden.listProdPerfiles[index].longLamina*cantidad, cantidadLam: cantidad, kilosTotales: orden.listProdPerfiles[index].kilosLamina * cantidad);
+        print("Consumo ${consumoRollo.fecha.toString()}");
+        var nuevoRollo = await DatabaseService().setConsumoRollo(orden, consumoRollo, rollo);
+        //TODO registrar en bitacora. Falta tiempo inicio completar el mapa
+        //Se actualiza el bloc
+        rolloActual.add(nuevoRollo);
       }
     } else {
       valorAntes = orden.listProdPerfiles[index].terminadaDespunte;
-      print("ValorAntes $valorAntes");
       cantOrden = orden.listProdPerfiles[index].cantDespunte;
-      print("Cantidad Orden: $cantOrden");
       cantidadNueva = valorAntes + cantidad;
-      print("Cantidad nueva: $cantidadNueva");
       if (cantidadNueva > cantOrden) {
         throw CustomError("La cantidad no puede ser superior a la orden");
       } else {
+        //Proceso Despunte
+        //Cantidad inferior o igual a la orden => modifica la cantidad terminada en la orden
         orden.listProdPerfiles[index].terminadaDespunte = cantidadNueva;
       }
     }
+    //Actualiza en la lista la orden modificada
     ordenMap[key] = orden;
     //ordenList.update(key, (orden) => orden);
-    print("Orden List term corte key: $key: ${ordenMap[key].listProdPerfiles[index].terminadaCorte}");
 
-    print("Terminadas orden: ${orden.listProdPerfiles[index].terminadaCorte.toString()}");
     _ordenesSubject.add(ordenMap);
+
+
     //print("Terminada despunte: ${orden.listProdPerfiles[index].terminadaDespunte}");
     await DatabaseService().setOrden(orden, orden.listProdPerfiles[index].nombre , index);
   }
