@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:prefacero_app/bloc/Provider.dart';
 import 'package:prefacero_app/model/order.dart';
 import 'package:prefacero_app/pruebas/csvTest.dart';
+import 'package:prefacero_app/screens/bitacoraSoldadura.dart';
 import 'package:prefacero_app/screens/listaOrdenes.dart';
 import 'package:prefacero_app/screens/ingresoRollo.dart';
 import 'package:prefacero_app/screens/inicio.dart';
 import 'package:prefacero_app/screens/inventarioSliverDropbox.dart';
+import 'package:prefacero_app/screens/listaOrdenesDoblez.dart';
 import 'package:prefacero_app/screens/loadJson.dart';
 import 'package:prefacero_app/screens/login.dart';
 import 'package:prefacero_app/screens/ordenProduccionSliverDropbox.dart';
@@ -43,6 +45,8 @@ class MyApp extends StatelessWidget {
               '/pedido': (context) => PedidosSliverDropBox(),//OrderManagement(),
               '/orden': (context) => SelectRollo(),
               '/corte': (context) => AreaCorte(),
+              '/doblez': (context) => AreaDoblez(),
+              '/soldadura': (context) => CastFilter(),//BitacoraSoldadura(),
               '/inventario': (context) => InventarioSliverDropBox(),
               '/pedidos': (context) => PedidosPage(),
               '/loadJson': (context) => LoadJson(),

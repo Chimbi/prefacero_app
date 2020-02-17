@@ -7,14 +7,16 @@ import 'package:prefacero_app/screens/cortePage.dart';
 import 'package:prefacero_app/utils/db.dart';
 import 'package:provider/provider.dart';
 
+import 'DoblezPage.dart';
+
 ///Pantalla que muestra la lista de ordenes de produccion
 ///
-class AreaCorte extends StatefulWidget {
+class AreaDoblez extends StatefulWidget {
   @override
-  _AreaCorteState createState() => _AreaCorteState();
+  _AreaDoblezState createState() => _AreaDoblezState();
 }
 
-class _AreaCorteState extends State<AreaCorte> {
+class _AreaDoblezState extends State<AreaDoblez> {
 
   Widget _buildItem(BuildContext context, OrdenProduccion data, CorteBloc bloc){
 
@@ -22,9 +24,7 @@ class _AreaCorteState extends State<AreaCorte> {
       child: ListTile(
         title: Text("No. Orden: ${data.numero}"),
         onTap: () async {
-          DetalleRollo rollo = await DatabaseService().getRollo(data.remesaRollo);
-          bloc.rolloActual.add(rollo);
-          Navigator.push<dynamic>(context, MaterialPageRoute<dynamic>(settings: RouteSettings(name: "/corteOrden"), builder: (BuildContext context) => CortePage(data.key)),);
+          Navigator.push<dynamic>(context, MaterialPageRoute<dynamic>(settings: RouteSettings(name: "/doblezOrden"), builder: (BuildContext context) => DoblezPage(data.key)),);
         }
       ),
      );

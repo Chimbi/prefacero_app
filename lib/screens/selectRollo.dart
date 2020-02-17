@@ -40,12 +40,13 @@ class SelectRollo extends StatelessWidget {
                               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                               children: <Widget>[
                                 Text("Remesa: ${snap.data[index].remesa}"),
-                                Text("${snap.data[index].kilos} Kgs"),
+                                Text("${snap.data[index].disponible.toStringAsFixed(2)} Kgs"),
                               ],
                             ),
+                            Text("Tipo: ${snap.data[index].tipoRollo}"),
                           ],
                         ),
-                        subtitle: Center(child: Text("Disponible: ${snap.data[index].disponible}")),
+                        subtitle: Center(child: Text("Disponible: ${snap.data[index].disponible.toStringAsFixed(2)}")),
                       ),
                     ),
                   );

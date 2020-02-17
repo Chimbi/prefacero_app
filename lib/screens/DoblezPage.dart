@@ -5,22 +5,22 @@ import 'package:prefacero_app/bloc/corteBloc.dart';
 import 'package:prefacero_app/model/produccion.dart';
 import 'package:prefacero_app/utils/db.dart';
 
-class CortePage extends StatefulWidget {
+class DoblezPage extends StatefulWidget {
   String clave;
 
-  CortePage(this.clave);
+  DoblezPage(this.clave);
 
   @override
-  _CortePageState createState() => _CortePageState();
+  _DoblezPageState createState() => _DoblezPageState();
 }
 
-class _CortePageState extends State<CortePage> {
-  String tipoProceso = "Corte";
+class _DoblezPageState extends State<DoblezPage> {
+  String tipoProceso = "Doblez";
 
   ///Tipo producto DropBox variables
   List<String> listaProceso = [
-    "Corte",
-    "Despunte",
+    "Grafado",
+    "Doblez",
   ];
 
   @override
@@ -81,13 +81,13 @@ class _CortePageState extends State<CortePage> {
                                 children: <Widget>[
                                   Text("${prod.nombre}"),
                                   SizedBox(width: 5),
-                                  tipoProceso == "Corte"
+                                  tipoProceso == "Doblez"
                                       ? Text("Terminadas: ${prod.terminadaProceso}")
-                                      : Text(prod.textoDespunte == "" ? "sin despunte" : "Terminadas: ${prod.terminadaDespunte}")
+                                      : Text(prod.cantProceso == "" ? "sin despunte" : "Terminadas: ")//${prod.terminadaProceso}")
                                 ],
                               ),
-                              subtitle: tipoProceso == "Corte"
-                                  ? Text("${prod.textoCorte}")
+                              subtitle: tipoProceso == "Doblez"
+                                  ? Text("Pendiente: ${prod.cantProceso-prod.terminadaProceso}")
                                   : Wrap(
                                 children: <Widget>[
                                   Text("${prod.textoDespunte}"),

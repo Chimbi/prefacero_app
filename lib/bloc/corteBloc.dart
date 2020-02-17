@@ -21,6 +21,7 @@ class CustomError extends Error {
 class CorteBloc {
   Map<String, OrdenProduccion> ordenMap;
   DetalleRollo rolloOrden;
+  String area;
 
   Stream<Map<String, OrdenProduccion>> get ordenes => _ordenesSubject.stream;
 
@@ -35,6 +36,10 @@ class CorteBloc {
 
   final _newOrdenController = StreamController<OrdenProduccion>();
 
+  //Sink area seleccionada doblez o corte
+  Sink<String> get areaActual  => _areaActualController.sink;
+  final _areaActualController = StreamController<String>();
+
   //Sink rollo orden actual
   Sink<DetalleRollo> get rolloActual  => _rolloActualController.sink;
   final _rolloActualController = StreamController<DetalleRollo>();
@@ -47,10 +52,15 @@ class CorteBloc {
     //Initialize ordenList
     ordenMap = Map<String,OrdenProduccion>();
     rolloOrden = DetalleRollo(remesa: "prueba");
+    //area = "corte";
 
-    getOrdenes().then((_) {
-      print("OrdenList: ${ordenMap.toString()}");
-      _ordenesSubject.add(ordenMap);
+    //Listen for the stream of change on the area of work
+    _areaActualController.stream.listen((data){
+      area = data;
+      getOrdenes(area).then((_) {
+        print("OrdenList: ${ordenMap.toString()}");
+        _ordenesSubject.add(ordenMap);
+      });
     });
 
     //Listen for the stream of changes in the form of a Map
@@ -73,9 +83,9 @@ class CorteBloc {
 
   }
 
-  Future<Map<String, OrdenProduccion>> getOrdenes() async {
+  Future<Map<String, OrdenProduccion>> getOrdenes(String proceso) async {
     print("Ejecución get Ordenes");
-    ordenMap = await DatabaseService().getListaOrdenes();
+    ordenMap = await DatabaseService().getListaOrdenes(proceso);
     print("OrdenList ${ordenMap.toString()}");
     return ordenMap;
   }
@@ -91,7 +101,8 @@ class CorteBloc {
     int index = data["index"];
     String proceso = data["proceso"];
     int cantidad = data["cantidad"];
-    DateTime fecha = data["fecha"];
+    DateTime fechaInicio = data["fechaInicio"];
+    DateTime fechaFin = data["fechaFin"];
     int valorAntes;
     int cantOrden;
     int cantidadNueva;
@@ -100,26 +111,30 @@ class CorteBloc {
 
     //Obtiene cantidad en orden y valor anterior
     if (proceso == "Corte") {
-      valorAntes = orden.listProdPerfiles[index].terminadaCorte;
-      cantOrden = orden.listProdPerfiles[index].cantCorte;
+      valorAntes = orden.listProdPerfiles[index].terminadaProceso;
+      cantOrden = orden.listProdPerfiles[index].cantProceso;
       cantidadNueva = valorAntes + cantidad;
       if (cantidadNueva > cantOrden) {
         throw CustomError("La cantidad no puede ser superior a la orden");
       } else {
         //Proceso Corte
         //Cantidad inferior o igual a la orden => modifica la cantidad terminada en la orden
-        orden.listProdPerfiles[index].terminadaCorte = cantidadNueva;
+        orden.listProdPerfiles[index].terminadaProceso = cantidadNueva;
 
         //Consumo del rollo se presenta unicamente en el corte no en despunte
-        var consumoRollo = ConsumoRollo(producto: orden.listProdPerfiles[index].nombre, fecha:  fecha, numOrden: orden.numero, longTotal: orden.listProdPerfiles[index].longLamina*cantidad, cantidadLam: cantidad, kilosTotales: orden.listProdPerfiles[index].kilosLamina * cantidad);
+        var consumoRollo = ConsumoRollo(producto: orden.listProdPerfiles[index].nombre, fecha:  fechaFin, numOrden: orden.numero, longTotal: orden.listProdPerfiles[index].longLamina*cantidad, cantidadLam: cantidad, kilosTotales: orden.listProdPerfiles[index].kilosLamina * cantidad);
         print("Consumo ${consumoRollo.fecha.toString()}");
         var nuevoRollo = await DatabaseService().setConsumoRollo(orden, consumoRollo, rollo);
         //TODO registrar en bitacora. Falta tiempo inicio completar el mapa
+        var regBitacora = RegBitacora(proceso: proceso, numOrden: orden.numero, producto: orden.listProdPerfiles[index].nombre, area: "Corte", cantidad: cantOrden, tiempoInicio: fechaInicio, tiempoFin: fechaFin, tiempoSeg: fechaFin.difference(fechaInicio).inSeconds, mes: fechaFin.month, anho: fechaFin.year); //TODO confirmar la cantidad dependiendo si es rollo o fleje
+        await DatabaseService().setRegBitacora(regBitacora);
         //Se actualiza el bloc
         rolloActual.add(nuevoRollo);
       }
     } else {
-      valorAntes = orden.listProdPerfiles[index].terminadaDespunte;
+      valorAntes = orden.
+
+      listProdPerfiles[index].terminadaDespunte;
       cantOrden = orden.listProdPerfiles[index].cantDespunte;
       cantidadNueva = valorAntes + cantidad;
       if (cantidadNueva > cantOrden) {

@@ -384,6 +384,7 @@ class _ProduccionSliverDropBoxState extends State<ProduccionSliverDropBox> {
                         }else{
                           //El consumo del rollo es menor o igual que la cantidad disponible
                           DatabaseService().setOrdenProduccion(produccionList, user.uid, bloc, widget.consecutivo, widget.rollo, widget.rollo.kilos - disponibleGlobal).then((orden) async {
+                            DatabaseService().setOrdenDoblez(List.from(productList)..addAll(adicProductList), user.uid, bloc, widget.consecutivo, widget.rollo);
                             //Actualizar el consecutivo en la base de datos
                             DatabaseService().setConsecutivoOrden(widget.consecutivo);
                             //Crear csv

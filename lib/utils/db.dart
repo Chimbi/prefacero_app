@@ -86,8 +86,10 @@ class DatabaseService {
     ordenProduccion.key = ordenRef.documentID;
     ordenProduccion.uid = uid;
     ordenProduccion.fechaSolicitud = DateTime.now();
-    ordenProduccion.numero = consecutivo;
+    ordenProduccion.numero = consecutivo.toString();
     ordenProduccion.remesaRollo = rollo.remesa;
+    ordenProduccion.tipoRollo = rollo.tipoRollo;
+    ordenProduccion.area = "corte";
     ordenProduccion.consumoOrden = consumo;
     //TODO evaluar si es en rollo o en fleje
     var listaDetalleProd = listProduccion.map((prod){
@@ -100,6 +102,33 @@ class DatabaseService {
     listaDetalleProd.forEach((prod){
       ordenRef.setData({
         "ordenProduccion": {prod.nombre : prod.toMap()}
+      },merge: true).then((_){
+        bloc.newOrden.add(ordenProduccion);
+      });
+      print("Producto en Orden: ${prod.toMap()}");
+      map.addAll(prod.toMap());
+    });
+    print("Map: $map");
+    return ordenProduccion;
+  }
+  Future<OrdenProduccion> setOrdenDoblez(List<Producto> listProducto, String uid, CorteBloc bloc, int consecutivo, DetalleRollo rollo) async {
+    OrdenProduccion ordenProduccion = OrdenProduccion();
+    Map<String, dynamic> map = {};
+    DocumentReference ordenRef = Firestore.instance.collection('ordenProduccion').document();
+    ordenProduccion.key = ordenRef.documentID;
+    ordenProduccion.uid = uid;
+    ordenProduccion.fechaSolicitud = DateTime.now();
+    ordenProduccion.numero = "$consecutivo-1";
+    ordenProduccion.tipoRollo = rollo.tipoRollo;
+    ordenProduccion.area = "doblez";
+    ordenRef.setData(ordenProduccion.toMapDoblez());
+    listProducto.forEach((prod){
+      ordenRef.setData({
+        "ordenProduccion": {prod.nombre : {
+          "nombre": prod.nombre,
+          "cantProceso": prod.disp,
+          "terminadaProceso": 0,
+        }}
       },merge: true).then((_){
         bloc.newOrden.add(ordenProduccion);
       });
@@ -138,6 +167,11 @@ class DatabaseService {
   Future<Null> setRollo (DetalleRollo rollo) async {
     DocumentReference rolloRef = Firestore.instance.collection('controlRollo').document('${rollo.remesa}');
     await rolloRef.setData(rollo.toMap(),merge: true);
+  }
+
+  Future<Null> setRegBitacora (RegBitacora registro) async {
+    DocumentReference bitacoraRef = Firestore.instance.collection('bitacora').document();
+    await bitacoraRef.setData(registro.toMap(),merge: true);
   }
 
   Future<DocumentReference> setPedido(Order pedido) async {
@@ -206,12 +240,13 @@ class DatabaseService {
   }
 
 //TODO Aca esta el problema CUAL???
-  Future<Map<String, OrdenProduccion>> getListaOrdenes() async{
+  Future<Map<String, OrdenProduccion>> getListaOrdenes(String proceso) async{
     List<DetalleProdPerfil> listProd;
     Map<String,dynamic> mapListaProd;
     Map<String, OrdenProduccion> mapOrdenProd = Map<String,OrdenProduccion>();
     //Get query con ordenes de producccion
-    QuerySnapshot query =  await _db.collection('ordenProduccion').getDocuments(); //.where('terminada',isEqualTo: 'False')
+    //Filter depending on the process
+    QuerySnapshot query =  await _db.collection('ordenProduccion').where('area', isEqualTo: proceso).getDocuments(); //.where('terminada',isEqualTo: 'False')
     print("Query length ${query.documents.length}");
 
     //Para cada orden agregar su lista de detalle de produccion
@@ -220,6 +255,7 @@ class DatabaseService {
       //Crea la orden a partir del mapa
       OrdenProduccion orden = OrdenProduccion.fromMap(doc.data);
       mapListaProd = doc['ordenProduccion'].cast<String,dynamic>();
+      //TODO En doblez no trae la informacion del perfil a cortar
       mapListaProd.forEach((d,v){
         listProd.add(DetalleProdPerfil.fromMap(v.cast<String,dynamic>()));
       });

@@ -1,5 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:prefacero_app/bloc/Provider.dart';
+import 'package:prefacero_app/bloc/corteBloc.dart';
 import 'package:prefacero_app/model/order.dart';
 import 'package:prefacero_app/theme/style.dart';
 import 'package:provider/provider.dart';
@@ -22,7 +24,8 @@ final List<MenuRoute> menu = <MenuRoute>[
   MenuRoute("Orden Produccion", '/orden', Icon(Icons.build , size: 60.0, color: backgroundCol)),
   MenuRoute("Inventario", '/inventario', Icon(Icons.build , size: 60.0, color: backgroundCol)),
   MenuRoute("Corte", '/corte', Icon(Icons.content_cut , size: 60.0, color: backgroundCol)),
-  MenuRoute("Terceros", '/terceros', Icon(Icons.person_add, size: 60.0, color: backgroundCol)),
+  MenuRoute("Doblez", '/doblez', Icon(Icons.all_inclusive, size: 60.0, color: backgroundCol)),
+  MenuRoute("Soldadura", '/soldadura', Icon(Icons.all_inclusive, size: 60.0, color: backgroundCol)),
   MenuRoute("Historico", '/pedidos', Icon(Icons.history, size: 60.0, color: backgroundCol)),
   MenuRoute("Load Info", '/loadJson', Icon(Icons.cloud_upload, size: 60.0, color: backgroundCol)),
   MenuRoute("CSV Test", '/csv', Icon(Icons.add_circle_outline, size: 60.0, color: backgroundCol)),
@@ -121,31 +124,47 @@ class _PaginaInicioState extends State<PaginaInicio> {
             InkWell(
               onTap: () async {
                 Navigator.pushNamed(context, menu.route);
-                if (menu.route == "/poliza") {
-                  polizaObj.uid = polizaObj.intermediary.uid;
-                  polizaObj.notifyListeners();
+                if (menu.route == "/corte") {
+                  NewProvider.of(context).areaActual.add("corte");
+                } else if (menu.route == "/doblez") {
+                  NewProvider.of(context).areaActual.add("doblez");
                 }
               },
               child: Card(
-                  elevation: 4.0,
+                  elevation: 7.0,
                   margin: EdgeInsets.all(5.0),
-                  color: hintCol,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      ListTile(
-                        title: Center(
-                          child: Text(
-                            "${menu.name}",
-                            style: TextStyle(
-                                fontSize: 25.0,
+                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(15))),
+                  child: Container(
+                    decoration: BoxDecoration(
+                      boxShadow: [BoxShadow(
+                        blurRadius: 20.0,
+                        offset: Offset(25, 25),
+                        color: Colors.black54
+                      )],
+                      borderRadius: BorderRadius.all(Radius.circular(15)),
+                        gradient: LinearGradient(
+                          colors: [hintCol, Colors.blue[800]],
+                          begin: Alignment.topCenter,
+                          end: Alignment.bottomCenter,
+                        )
+                    ),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        ListTile(
+                          title: Center(
+                            child: Text(
+                              "${menu.name}",
+                              style: TextStyle(
                                 color: Colors.white,
-                                fontWeight: FontWeight.bold),
+                                  fontSize: 25.0,
+                                  fontWeight: FontWeight.bold),
+                            ),
                           ),
+                          subtitle: menu.widget,
                         ),
-                        subtitle: menu.widget,
-                      ),
-                    ],
+                      ],
+                    ),
                   )),
             ),
           ]
