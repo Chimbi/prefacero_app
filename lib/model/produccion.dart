@@ -82,6 +82,7 @@ class RegBitacora {
   String numOrden;
   String producto;
   String area;
+  List<String> responsable;
   int cantidad;
   DateTime tiempoInicio;
   DateTime tiempoFin;
@@ -89,7 +90,7 @@ class RegBitacora {
   int mes;
   int tiempoSeg;
 
-  RegBitacora({this.proceso, this.numOrden, this.producto, this.area,
+  RegBitacora({this.proceso, this.numOrden, this.producto, this.area, this.responsable,
       this.cantidad, this.tiempoInicio, this.tiempoFin, this.anho, this.mes,
       this.tiempoSeg});
 
@@ -98,6 +99,7 @@ class RegBitacora {
     numOrden: map["numOrden"],
     producto: map["producto"],
     area: map["area"],
+    responsable: map["responsable"].toList(),
     cantidad: map["cantidad"],
     tiempoInicio: map["tiempoInicio"].toDate(),
     tiempoFin: map["tiempoFin"].toDate(),
@@ -113,6 +115,7 @@ class RegBitacora {
     "numOrden": numOrden,
     "producto": producto,
     "area": area,
+    "responsable": responsable.asMap(),
     "cantidad": cantidad,
     "tiempoInicio": tiempoInicio,
     "tiempoFin": tiempoFin,
